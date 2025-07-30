@@ -124,20 +124,12 @@ export function Results() {
             <div className="relative bg-cream rounded-lg overflow-hidden mb-6 lg:mb-8 shadow-lg">
               {/* Single Before/After Image */}
               <div className="relative">
-                {beforeAfterResults[currentSlide].beforeAfter ? (
-                  <img 
-                    src={beforeAfterResults[currentSlide].beforeAfter} 
-                    alt={`Before and After - ${beforeAfterResults[currentSlide].caption}`}
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                ) : (
-                  <div className="w-full aspect-[4/3] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                <div className="w-full aspect-[3/2] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
                     <div className="text-center space-y-2 lg:space-y-3">
                       <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
                       <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
                     </div>
-                  </div>
-                )}
+                </div>
                 
                 {/* Before/After Label */}
                 <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold">
