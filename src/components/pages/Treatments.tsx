@@ -209,7 +209,7 @@ export function Treatments() {
         'Quick stress relief',
         'Improves posture comfort',
       ],
-      image: '',
+      image: '/assets/swedishbackonlymassage.jpg',
       category: 'massages'
     },
     {
@@ -237,7 +237,7 @@ export function Treatments() {
         'Stress relief in key areas',
         'Natural mood enhancement',
       ],
-      image: '/assets/swedishbackonlymassage.jpg',
+      image: '/assets/preblendedaromatherapybackonlymassage.jpg',
       category: 'massages'
     },
     {
@@ -346,7 +346,7 @@ export function Treatments() {
         'Gentle on sensitive skin',
         'Precise hair removal',
       ],
-      image: '',
+      image: '/assets/lipwaxing.jpg',
       category: 'waxing'
     },
     {
@@ -372,7 +372,7 @@ export function Treatments() {
         'Perfectly defined shape',
         'Professional precision',
       ],
-      image: '',
+      image: '/assets/eyebrowswaxing.jpg',
       category: 'waxing'
     },
 
@@ -402,7 +402,7 @@ export function Treatments() {
         'Complete upper body care',
         'Enhanced relaxation',
       ],
-      image: '',
+      image: '/assets/chestfaceandscalpaddon.jpg',
       category: 'add-ons'
     },
     {
@@ -415,7 +415,7 @@ export function Treatments() {
         'Aromatherapy benefits',
         'Luxury enhancement',
       ],
-      image: '',
+      image: '/assets/candlewaxoiladdon.jpg',
       category: 'add-ons'
     },
     {
