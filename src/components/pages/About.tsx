@@ -66,7 +66,6 @@ export function About() {
                   <span className="block text-forest">Skin Specialist</span>
                 </h1>
                 
-                <p className="text-lg lg:text-2xl text-olive leading-relaxed">
                 <p className="text-lg lg:text-2xl text-dark-sage leading-relaxed">
                   Dedicated to transforming skin through science, genuine care,
                   and completely personalized expertise.
