@@ -167,11 +167,21 @@ export function Results() {
               <div className="relative bg-cream rounded-lg overflow-hidden shadow-lg max-w-xl w-full">
                 {/* Single Before/After Image */}
                 <div className="relative">
-                  <div className="w-full aspect-[1.2/1] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
-                      <div className="text-center space-y-2 lg:space-y-3">
-                        <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
-                        <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                  <div className="w-full aspect-[1.2/1] relative overflow-hidden">
+                    {beforeAfterResults[currentSlide].beforeAfter ? (
+                      <img 
+                        src={beforeAfterResults[currentSlide].beforeAfter}
+                        alt={`${beforeAfterResults[currentSlide].caption} - Before & After Results`}
+                        className={`w-full h-full object-cover transition-opacity duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+                      />
+                    ) : (
+                      <div className={`w-full h-full bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center transition-opacity duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="text-center space-y-2 lg:space-y-3">
+                          <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                          <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                        </div>
                       </div>
+                    )}
                   </div>
                   
                   {/* Before/After Label */}
