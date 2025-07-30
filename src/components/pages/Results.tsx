@@ -9,7 +9,7 @@ export function Results() {
   const beforeAfterResults = [
     {
       id: '1',
-      beforeAfter: '/assets/hp1ta.jpg',
+      beforeAfter: '/assets/rp1.jpg',
       caption: 'Acne Scarring Treatment',
       sessions: 4,
       treatment: 'Pro Power Peel Series',
@@ -19,7 +19,7 @@ export function Results() {
     },
     {
       id: '2',
-      beforeAfter: '/assets/hp2ta.jpg',
+      beforeAfter: '/assets/rp2.jpg',
       caption: 'Pigmentation Correction',
       sessions: 6,
       treatment: 'Targeted Chemical Peels',
@@ -29,7 +29,7 @@ export function Results() {
     },
     {
       id: '3',
-      beforeAfter: '/assets/hp3ta.jpg',
+      beforeAfter: '/assets/rp3.jpg',
       caption: 'Anti-Aging Treatment',
       sessions: 5,
       treatment: 'Hydrating Facials + Peels',
@@ -39,7 +39,7 @@ export function Results() {
     },
     {
       id: '4',
-      beforeAfter: '',
+      beforeAfter: '/assets/rp4.jpg',
       caption: 'Skin Texture Improvement',
       sessions: 3,
       treatment: 'Deep Cleansing Facials',
@@ -49,7 +49,7 @@ export function Results() {
     },
     {
       id: '5',
-      beforeAfter: '',
+      beforeAfter: '/assets/rp5.jpg',
       caption: 'Overall Skin Health',
       sessions: 8,
       treatment: 'Comprehensive Care Plan',
@@ -59,13 +59,33 @@ export function Results() {
     },
     {
       id: '6',
-      beforeAfter: '',
+      beforeAfter: '/assets/rp6.jpg',
       caption: 'Hydration & Glow',
       sessions: 4,
       treatment: 'Intensive Hydrating Series',
       description: 'Restored moisture balance and natural radiance',
       testimonial: "My skin has never been more hydrated and glowing. People keep asking what I'm using - it's all thanks to Val's treatments!",
       clientName: "Sophie W."
+    },
+    {
+      id: '7',
+      beforeAfter: '/assets/rp7.jpg',
+      caption: 'Acne Treatment Success',
+      sessions: 6,
+      treatment: 'Targeted Acne Protocol',
+      description: 'Clear, healthy skin transformation',
+      testimonial: "After struggling with acne for years, Val's targeted approach finally gave me the clear skin I dreamed of. I feel so much more confident now.",
+      clientName: "Charlotte B."
+    },
+    {
+      id: '8',
+      beforeAfter: '/assets/rp8.jpg',
+      caption: 'Complete Skin Renewal',
+      sessions: 7,
+      treatment: 'Full Transformation Package',
+      description: 'Comprehensive skin health improvement',
+      testimonial: "The results speak louder than any review ever could. My skin tells my success story now. Thank you Val for giving me back my confidence.",
+      clientName: "Lucy H."
     }
   ];
 
