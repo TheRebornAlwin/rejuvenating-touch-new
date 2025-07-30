@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 
 export function Results() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   const beforeAfterResults = [
     {
@@ -75,7 +76,11 @@ export function Results() {
   // Auto-slide every 6 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+        setIsVisible(true);
+      }, 250);
     }, 6000);
 
     return () => clearInterval(interval);
@@ -95,11 +100,19 @@ export function Results() {
   };
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+    setIsVisible(false);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+      setIsVisible(true);
+    }, 250);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + beforeAfterResults.length) % beforeAfterResults.length);
+    setIsVisible(false);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev - 1 + beforeAfterResults.length) % beforeAfterResults.length);
+      setIsVisible(true);
+    }, 250);
   };
 
   const handleBookNow = () => {
@@ -167,7 +180,7 @@ export function Results() {
             <div className="lg:col-span-1">
               <div className="flex items-center justify-center lg:justify-start h-full">
                 {/* Client Testimonial */}
-                <div className="bg-white p-6 lg:p-8 rounded-lg shadow-md w-full transition-opacity duration-500 ease-in-out" key={currentSlide}>
+                <div className={`bg-white p-6 lg:p-8 rounded-lg shadow-md w-full transition-opacity duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                   <div className="flex items-center justify-center lg:justify-start mb-3 lg:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 lg:w-5 h-4 lg:h-5 text-gold fill-current" />
@@ -179,9 +192,6 @@ export function Results() {
                   <div className="text-center lg:text-left">
                     <p className="font-serif font-bold text-forest text-lg lg:text-xl">
                       {beforeAfterResults[currentSlide].clientName}
-                    </p>
-                    <p className="text-forest/70 text-sm lg:text-base">
-                      {beforeAfterResults[currentSlide].treatment} • {beforeAfterResults[currentSlide].sessions} sessions
                     </p>
                   </div>
                 </div>
