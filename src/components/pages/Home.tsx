@@ -90,10 +90,30 @@ export function Home() {
   ];
 
   const beforeAfterResults = [
-    { caption: "Acne scarring improvement", sessions: "4 sessions" },
-    { caption: "Pigmentation correction", sessions: "6 sessions" },
-    { caption: "Fine line reduction", sessions: "5 sessions" },
-    { caption: "Texture refinement", sessions: "3 sessions" }
+    { 
+      before: '', 
+      after: '', 
+      caption: "Acne scarring improvement", 
+      sessions: "4 sessions" 
+    },
+    { 
+      before: '', 
+      after: '', 
+      caption: "Pigmentation correction", 
+      sessions: "6 sessions" 
+    },
+    { 
+      before: '', 
+      after: '', 
+      caption: "Fine line reduction", 
+      sessions: "5 sessions" 
+    },
+    { 
+      before: '', 
+      after: '', 
+      caption: "Texture refinement", 
+      sessions: "3 sessions" 
+    }
   ];
 
   const handleBookNow = () => {
@@ -167,22 +187,46 @@ export function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-6 mb-8 lg:mb-12">
-            {/* Before/After Placeholders */}
-            {[
-              "Before/After: Acne Scarring Treatment - 6 Sessions",
-              "Before/After: Pigmentation Correction - Real Results",
-              "Before/After: Fine Lines & Texture - Anti-Aging Success",
-              "Before/After: Complete Skin Transformation - 12 Weeks",
-              "Before/After: Pore Refinement & Glow - Deep Cleansing",
-              "Before/After: Rosacea Management - Calming Treatment",
-              "Before/After: Sun Damage Reversal - Chemical Peel Series",
-              "Before/After: Hormonal Acne Recovery - Targeted Care"
-            ].map((label, index) => (
-              <div key={index} className="aspect-square premium-card rounded-lg flex items-center justify-center border border-gold/20">
-                <div className="text-center p-2 lg:p-3">
-                  <Star className="w-6 lg:w-8 h-6 lg:h-8 text-gold mx-auto mb-1 lg:mb-2" />
-                  <p className="text-xs text-forest font-medium text-center leading-tight">{label}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8 lg:mb-12">
+            {beforeAfterResults.map((result, index) => (
+              <div key={index} className="premium-card rounded-lg overflow-hidden border border-gold/20">
+                {/* Before/After Images */}
+                <div className="grid grid-cols-2">
+                  {/* Before */}
+                  <div className="relative">
+                    <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/15 flex items-center justify-center">
+                      <div className="text-center space-y-2">
+                        <Star className="w-8 lg:w-12 h-8 lg:h-12 text-charcoal/40 mx-auto" />
+                        <p className="text-charcoal/60 font-serif text-xs lg:text-sm">Before Photo</p>
+                      </div>
+                    </div>
+                    <div className="absolute top-2 left-2 bg-charcoal/80 text-white px-2 py-1 rounded text-xs">
+                      Before
+                    </div>
+                  </div>
+                  
+                  {/* After */}
+                  <div className="relative">
+                    <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                      <div className="text-center space-y-2">
+                        <Star className="w-8 lg:w-12 h-8 lg:h-12 text-forest/40 mx-auto fill-current" />
+                        <p className="text-forest/60 font-serif text-xs lg:text-sm">After Photo</p>
+                      </div>
+                    </div>
+                    <div className="absolute top-2 left-2 bg-forest/90 text-gold px-2 py-1 rounded text-xs">
+                      After
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Caption and Sessions */}
+                <div className="p-4 lg:p-6 text-center">
+                  <h3 className="font-serif text-base lg:text-lg font-semibold text-forest mb-2">
+                    {result.caption}
+                  </h3>
+                  <p className="text-forest/70 text-sm">
+                    {result.sessions}
+                  </p>
                 </div>
               </div>
             ))}
