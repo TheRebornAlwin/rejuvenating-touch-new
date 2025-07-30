@@ -447,7 +447,7 @@ export function Treatments() {
     {
       id: '32',
       name: 'Cold Globes',
-      price: '£8',
+      price: '£2',
       description: 'Cooling facial globes treatment to reduce puffiness and soothe skin. Perfect finishing touch for any facial treatment.',
       benefits: [
         'Reduces facial puffiness instantly',
