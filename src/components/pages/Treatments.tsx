@@ -320,7 +320,7 @@ export function Treatments() {
         'Smooth underarms for weeks',
         'Reduces ingrown hairs',
       ],
-      image: '',
+      image: '/assets/underarmwaxing.jpg',
       category: 'waxing'
     },
     {
@@ -333,7 +333,7 @@ export function Treatments() {
         'Great value combination',
         'Precise eyebrow shaping',
       ],
-      image: '',
+      image: '/assets/lipchinandeyebrowwaxing.jpg',
       category: 'waxing'
     },
     {
@@ -359,7 +359,7 @@ export function Treatments() {
         'Quick and comfortable',
         'Long-lasting smoothness',
       ],
-      image: '',
+      image: '/assets/chinwaxing.jpg',
       category: 'waxing'
     },
     {
@@ -428,7 +428,7 @@ export function Treatments() {
         'Natural exfoliation',
         'Prepares skin for treatments',
       ],
-      image: '',
+      image: '/assets/bodybrushingaddon.jpg',
       category: 'add-ons'
     },
     {
