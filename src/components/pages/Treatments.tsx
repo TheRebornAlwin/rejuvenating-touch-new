@@ -415,7 +415,7 @@ export function Treatments() {
         'Aromatherapy benefits',
         'Luxury enhancement',
       ],
-      image: '/assets/jellymask.jpeg',
+      image: '',
       category: 'add-ons'
     },
     {
@@ -441,7 +441,7 @@ export function Treatments() {
         'Cooling and soothing',
         'Perfect treatment finish',
       ],
-      image: '',
+      image: '/assets/coldstonemask.jpeg',
       category: 'add-ons'
     },
     {
@@ -467,7 +467,7 @@ export function Treatments() {
         'Cooling and refreshing sensation',
         'Leaves skin plump and glowing',
       ],
-      image: '/assets/coldstonemask.jpeg',
+      image: '/assets/jellymask.jpeg',
       category: 'add-ons'
     }
   ];
