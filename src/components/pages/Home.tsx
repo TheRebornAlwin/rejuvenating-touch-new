@@ -91,8 +91,8 @@ export function Home() {
 
   const beforeAfterResults = [
     { 
-      before: '', 
-      after: '', 
+      before: '/assets/hp1tibefore.png', 
+      after: '/assets/hp1tiafter.png', 
       caption: "Acne scarring improvement", 
       sessions: "4 sessions" 
     },
@@ -161,13 +161,12 @@ export function Home() {
             <div className="relative animate-scale-in">
               {/* Treatment Space Image Placeholder */}
               <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
-                <div className="w-full h-full premium-white-gradient flex items-center justify-center border-2 border-gold/20">
-                  <div className="text-center space-y-4">
-                    <Heart className="w-24 h-24 text-gold/60 mx-auto animate-float" />
-                    <p className="text-forest/60 font-serif text-lg">Val's Premium Treatment Space</p>
-                    <p className="text-forest/50 text-sm">Serene, private clinic environment</p>
-                  </div>
-                </div>
+                <img 
+                  src="/assets/herosectionimage.jpg" 
+                  alt="Val's Premium Treatment Space - Serene, private clinic environment" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
             </div>
           </div>
@@ -194,12 +193,20 @@ export function Home() {
                 <div className="grid grid-cols-2">
                   {/* Before */}
                   <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/15 flex items-center justify-center">
-                      <div className="text-center space-y-2">
-                        <Star className="w-8 lg:w-12 h-8 lg:h-12 text-charcoal/40 mx-auto" />
-                        <p className="text-charcoal/60 font-serif text-xs lg:text-sm">Before Photo</p>
+                    {result.before ? (
+                      <img 
+                        src={result.before} 
+                        alt={`Before - ${result.caption}`}
+                        className="w-full aspect-square object-cover"
+                      />
+                    ) : (
+                      <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/15 flex items-center justify-center">
+                        <div className="text-center space-y-2">
+                          <Star className="w-8 lg:w-12 h-8 lg:h-12 text-charcoal/40 mx-auto" />
+                          <p className="text-charcoal/60 font-serif text-xs lg:text-sm">Before Photo</p>
+                        </div>
                       </div>
-                    </div>
+                    )}
                     <div className="absolute top-2 left-2 bg-charcoal/80 text-white px-2 py-1 rounded text-xs">
                       Before
                     </div>
@@ -207,12 +214,20 @@ export function Home() {
                   
                   {/* After */}
                   <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
-                      <div className="text-center space-y-2">
-                        <Star className="w-8 lg:w-12 h-8 lg:h-12 text-forest/40 mx-auto fill-current" />
-                        <p className="text-forest/60 font-serif text-xs lg:text-sm">After Photo</p>
+                    {result.after ? (
+                      <img 
+                        src={result.after} 
+                        alt={`After - ${result.caption}`}
+                        className="w-full aspect-square object-cover"
+                      />
+                    ) : (
+                      <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                        <div className="text-center space-y-2">
+                          <Star className="w-8 lg:w-12 h-8 lg:h-12 text-forest/40 mx-auto fill-current" />
+                          <p className="text-forest/60 font-serif text-xs lg:text-sm">After Photo</p>
+                        </div>
                       </div>
-                    </div>
+                    )}
                     <div className="absolute top-2 left-2 bg-forest/90 text-gold px-2 py-1 rounded text-xs">
                       After
                     </div>
