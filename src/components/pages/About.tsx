@@ -127,12 +127,12 @@ export function About() {
             
             <div className="space-y-6 lg:space-y-8 px-4 lg:px-0">
               <div className="aspect-[4/5] relative overflow-hidden rounded-2xl elegant-shadow">
-                <div className="w-full h-full bg-gradient-to-br from-sage/20 via-gold/15 to-forest/15 flex items-center justify-center">
-                  <div className="text-center space-y-3 lg:space-y-4">
-                    <Leaf className="w-16 lg:w-20 h-16 lg:h-20 text-forest/40 mx-auto" />
-                    <p className="text-olive/60 font-serif text-base lg:text-lg">Working with Client</p>
-                  </div>
-                </div>
+                <img 
+                  src="/assets/myjourneyin.jpg" 
+                  alt="Val's journey in aesthetics - working with clients" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
               
               <div className="bg-white p-6 lg:p-8 rounded-2xl elegant-shadow">

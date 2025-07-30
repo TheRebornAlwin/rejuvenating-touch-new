@@ -314,13 +314,12 @@ export function Home() {
             <div className="animate-scale-in">
               {/* Val's Portrait */}
               <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
-                <div className="w-full h-full premium-card flex items-center justify-center border border-gold/20">
-                  <div className="text-center space-y-3 lg:space-y-4">
-                    <Heart className="w-16 lg:w-20 h-16 lg:h-20 text-forest mx-auto" />
-                    <p className="text-forest font-serif text-base lg:text-lg">Val in Clinic Setting</p>
-                    <p className="text-forest/70 text-sm">Professional portrait with client</p>
-                  </div>
-                </div>
+                <img 
+                  src="/assets/aboutvalheroimg.jpg" 
+                  alt="Val - Your Personal Skin Specialist in her Cardiff clinic" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
             </div>
             
@@ -399,11 +398,27 @@ export function Home() {
                 {/* Portrait Placeholder */}
                 <div className={`${index % 2 === 1 ? 'lg:order-3' : ''}`}>
                   <div className="aspect-square premium-card rounded-xl flex items-center justify-center border border-gold/20 max-w-xs lg:max-w-sm mx-auto">
-                    <div className="text-center p-4 lg:p-6">
-                      <Users className="w-12 lg:w-16 h-12 lg:h-16 text-gold mx-auto mb-2 lg:mb-3" />
-                      <p className="text-forest font-serif text-sm">Portrait of {testimonial.name}</p>
-                      <p className="text-forest/70 text-xs">Cardiff Client</p>
-                    </div>
+                    {index === 0 && (
+                      <img 
+                        src="/assets/hpsarahtesti.jpg" 
+                        alt="Sarah M. - Cardiff client testimonial" 
+                        className="w-full h-full object-cover rounded-xl"
+                      />
+                    )}
+                    {index === 1 && (
+                      <img 
+                        src="/assets/hpemmatesti.jpg" 
+                        alt="Emma L. - Cardiff client testimonial" 
+                        className="w-full h-full object-cover rounded-xl"
+                      />
+                    )}
+                    {index === 2 && (
+                      <img 
+                        src="/assets/hpkatetesti.jpg" 
+                        alt="Kate R. - Cardiff client testimonial" 
+                        className="w-full h-full object-cover rounded-xl"
+                      />
+                    )}
                   </div>
                 </div>
                 
