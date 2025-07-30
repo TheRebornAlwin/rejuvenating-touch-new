@@ -172,69 +172,115 @@ export function Results() {
         </div>
       </section>
 
-      {/* Masonry Grid */}
+      {/* Client Testimonials with Before/After */}
       <section className="py-16 lg:py-32 bg-cream">
         <div className="container-custom">
           <div className="py-8 lg:py-16">
-          <div className="text-center mb-8 lg:mb-16 px-4">
-            <h2 className="text-3xl lg:text-5xl font-serif text-forest mb-4 text-center">
-              More Transformations
-            </h2>
-            <p className="text-lg lg:text-xl text-forest max-w-4xl mx-auto">
-              Each result represents a unique journey and personalized treatment plan
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 px-4 lg:px-0">
-            {beforeAfterResults.slice(0, 6).map((result) => (
-              <div key={result.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="grid grid-cols-2">
-                  <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/10 flex items-center justify-center">
-                      <div className="text-center space-y-1 lg:space-y-2">
-                        <Star className="w-8 lg:w-10 h-8 lg:h-10 text-charcoal/40 mx-auto" />
-                        <p className="text-charcoal/50 font-serif text-xs">Before</p>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-1 lg:bottom-2 left-1 lg:left-2 bg-charcoal/80 text-white text-xs px-1 lg:px-2 py-1 rounded">
-                      Before
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 px-4 lg:px-0">
+              {/* First Testimonial */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                {/* Single Before/After Image */}
+                <div className="relative">
+                  <div className="w-full aspect-[4/3] bg-gradient-to-r from-charcoal/10 via-gold/10 to-forest/15 flex items-center justify-center">
+                    <div className="text-center space-y-2 lg:space-y-3">
+                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
                     </div>
                   </div>
-                  <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
-                      <div className="text-center space-y-1 lg:space-y-2">
-                        <Star className="w-8 lg:w-10 h-8 lg:h-10 text-forest/40 mx-auto fill-current" />
-                        <p className="text-forest/50 font-serif text-xs">After</p>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-1 lg:bottom-2 left-1 lg:left-2 bg-forest/90 text-gold text-xs px-1 lg:px-2 py-1 rounded">
-                      After
-                    </div>
+                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
+                    Transformation
                   </div>
                 </div>
-                <div className="p-3 lg:p-4">
-                  <h3 className="font-serif text-base lg:text-lg font-semibold text-forest mb-2">
-                    {result.caption}
-                  </h3>
-                  <p className="text-xs lg:text-sm text-white mb-2">
-                    {result.description}
-                  </p>
-                  <div className="flex items-center justify-between text-xs lg:text-sm">
-                    <span className="text-white font-medium">
-                      {result.sessions} sessions
-                    </span>
-                    <span className="text-white">
-                      {result.treatment}
-                    </span>
+                
+                {/* Testimonial Content */}
+                <div className="p-6 lg:p-8 space-y-4 lg:space-y-6">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center space-x-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                      ))}
+                    </div>
+                    <blockquote className="text-base lg:text-lg text-forest italic leading-relaxed mb-4">
+                      "Three sessions with Val completely changed my skin. No more hiding behind makeup—I actually love my reflection now. The personalized approach made all the difference."
+                    </blockquote>
+                    <div className="border-t border-gold/20 pt-4">
+                      <p className="font-serif text-lg lg:text-xl font-bold text-forest">Sarah M.</p>
+                      <p className="text-forest/70 text-sm lg:text-base">Pro Power Peel Series</p>
+                      <p className="text-forest/60 text-xs lg:text-sm mt-1">4 sessions • Cardiff</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-          </div>
-        </div>
-      </section>
 
+              {/* Second Testimonial */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                {/* Single Before/After Image */}
+                <div className="relative">
+                  <div className="w-full aspect-[4/3] bg-gradient-to-r from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                    <div className="text-center space-y-2 lg:space-y-3">
+                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                    </div>
+                  </div>
+                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
+                    Transformation
+                  </div>
+                </div>
+                
+                {/* Testimonial Content */}
+                <div className="p-6 lg:p-8 space-y-4 lg:space-y-6">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center space-x-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                      ))}
+                    </div>
+                    <blockquote className="text-base lg:text-lg text-forest italic leading-relaxed mb-4">
+                      "After years of trying everything, Val actually listened and understood my skin. Now I wake up confident. The results speak for themselves."
+                    </blockquote>
+                    <div className="border-t border-gold/20 pt-4">
+                      <p className="font-serif text-lg lg:text-xl font-bold text-forest">Emma L.</p>
+                      <p className="text-forest/70 text-sm lg:text-base">Deep Cleansing Protocol</p>
+                      <p className="text-forest/60 text-xs lg:text-sm mt-1">6 sessions • Cardiff</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Third Testimonial */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                {/* Single Before/After Image */}
+                <div className="relative">
+                  <div className="w-full aspect-[4/3] bg-gradient-to-r from-sage/15 via-gold/10 to-forest/10 flex items-center justify-center">
+                    <div className="text-center space-y-2 lg:space-y-3">
+                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                    </div>
+                  </div>
+                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
+                    Transformation
+                  </div>
+                </div>
+                
+                {/* Testimonial Content */}
+                <div className="p-6 lg:p-8 space-y-4 lg:space-y-6">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center space-x-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                      ))}
+                    </div>
+                    <blockquote className="text-base lg:text-lg text-forest italic leading-relaxed mb-4">
+                      "My skin has never looked this good. Every session feels like self-care that actually works. Val's expertise is unmatched."
+                    </blockquote>
+                    <div className="border-t border-gold/20 pt-4">
+                      <p className="font-serif text-lg lg:text-xl font-bold text-forest">Kate R.</p>
+                      <p className="text-forest/70 text-sm lg:text-base">Anti-Aging Facial Series</p>
+                      <p className="text-forest/60 text-xs lg:text-sm mt-1">5 sessions • Cardiff</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
       {/* Case Study Spotlight */}
       <section className="py-16 lg:py-32 bg-forest text-white">
         <div className="container-custom">
@@ -316,6 +362,44 @@ export function Results() {
         </div>
       </section>
 
+              {/* Fourth Testimonial */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                {/* Single Before/After Image */}
+                <div className="relative">
+                  <div className="w-full aspect-[4/3] bg-gradient-to-r from-forest/10 via-gold/15 to-sage/10 flex items-center justify-center">
+                    <div className="text-center space-y-2 lg:space-y-3">
+                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                    </div>
+                  </div>
+                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
+                    Transformation
+                  </div>
+                </div>
+                
+                {/* Testimonial Content */}
+                <div className="p-6 lg:p-8 space-y-4 lg:space-y-6">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center space-x-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                      ))}
+                    </div>
+                    <blockquote className="text-base lg:text-lg text-forest italic leading-relaxed mb-4">
+                      "Val understood my acne scars when no one else could. Six months later, I don't recognize my own skin—in the best way."
+                    </blockquote>
+                    <div className="border-t border-gold/20 pt-4">
+                      <p className="font-serif text-lg lg:text-xl font-bold text-forest">Jessica T.</p>
+                      <p className="text-forest/70 text-sm lg:text-base">Scar Reduction Series</p>
+                      <p className="text-forest/60 text-xs lg:text-sm mt-1">8 sessions • Cardiff</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* CTA Section */}
       <section className="py-16 lg:py-32 bg-cream">
         <div className="container-custom text-center">
