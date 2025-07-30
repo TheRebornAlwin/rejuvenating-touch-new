@@ -91,8 +91,8 @@ export function Home() {
 
   const beforeAfterResults = [
     { 
-      before: '/assets/hp1tibefore.png', 
-      after: '/assets/hp1tiafter.png', 
+      before: '/assets/hp1tb.jpg', 
+      after: '/assets/hp1ta.jpg', 
       caption: "Acne scarring improvement", 
       sessions: "4 sessions" 
     },
