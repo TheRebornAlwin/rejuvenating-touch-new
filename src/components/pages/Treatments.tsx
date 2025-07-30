@@ -294,7 +294,7 @@ export function Treatments() {
         'Professional technique',
         'Reduces hair regrowth over time',
       ],
-      image: '/assets/fulllegwaxing.jpg',
+      image: '/assets/fullllegwaxing.jpg',
       category: 'waxing'
     },
     {
