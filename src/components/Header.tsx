@@ -35,14 +35,7 @@ export function Header() {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center group cursor-pointer">
-            <div className="w-14 h-14 rounded-full overflow-hidden group-hover:opacity-90 transition-all duration-300 soft-glow">
-              <img 
-                src="/assets/logo.jpg" 
-                alt="Rejuvenating Touch Logo" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <span className="ml-4 font-serif text-2xl font-semibold text-white hidden sm:block">
+            <span className="font-serif text-2xl font-semibold text-white hidden sm:block">
               Rejuvenating Touch
             </span>
           </Link>
