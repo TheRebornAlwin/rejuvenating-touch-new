@@ -37,7 +37,7 @@ export function Header() {
           <Link to="/" className="flex items-center group cursor-pointer">
             <div className="w-12 h-12 rounded-full overflow-hidden mr-3 flex-shrink-0">
               <img 
-                src="/assets/logo.jpg" 
+                src="/assets/logooo.jpg" 
                 alt="Rejuvenating Touch Logo" 
                 className="w-full h-full object-cover"
               />
