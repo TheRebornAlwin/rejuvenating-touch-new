@@ -172,68 +172,6 @@ export function Results() {
         </div>
       </section>
 
-      {/* Masonry Grid */}
-      <section className="py-16 lg:py-32 bg-cream">
-        <div className="container-custom">
-          <div className="py-8 lg:py-16">
-          <div className="text-center mb-8 lg:mb-16 px-4">
-            <h2 className="text-3xl lg:text-5xl font-serif text-forest mb-4 text-center">
-              More Transformations
-            </h2>
-            <p className="text-lg lg:text-xl text-forest max-w-4xl mx-auto">
-              Each result represents a unique journey and personalized treatment plan
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 px-4 lg:px-0">
-            {beforeAfterResults.slice(0, 6).map((result) => (
-              <div key={result.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="grid grid-cols-2">
-                  <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/10 flex items-center justify-center">
-                      <div className="text-center space-y-1 lg:space-y-2">
-                        <Star className="w-8 lg:w-10 h-8 lg:h-10 text-charcoal/40 mx-auto" />
-                        <p className="text-charcoal/50 font-serif text-xs">Before</p>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-1 lg:bottom-2 left-1 lg:left-2 bg-charcoal/80 text-white text-xs px-1 lg:px-2 py-1 rounded">
-                      Before
-                    </div>
-                  </div>
-                  <div className="relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
-                      <div className="text-center space-y-1 lg:space-y-2">
-                        <Star className="w-8 lg:w-10 h-8 lg:h-10 text-forest/40 mx-auto fill-current" />
-                        <p className="text-forest/50 font-serif text-xs">After</p>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-1 lg:bottom-2 left-1 lg:left-2 bg-forest/90 text-gold text-xs px-1 lg:px-2 py-1 rounded">
-                      After
-                    </div>
-                  </div>
-                </div>
-                <div className="p-3 lg:p-4">
-                  <h3 className="font-serif text-base lg:text-lg font-semibold text-forest mb-2">
-                    {result.caption}
-                  </h3>
-                  <p className="text-xs lg:text-sm text-white mb-2">
-                    {result.description}
-                  </p>
-                  <div className="flex items-center justify-between text-xs lg:text-sm">
-                    <span className="text-white font-medium">
-                      {result.sessions} sessions
-                    </span>
-                    <span className="text-white">
-                      {result.treatment}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          </div>
-        </div>
-      </section>
 
       {/* Case Study Spotlight */}
       <section className="py-16 lg:py-32 bg-forest text-white">
