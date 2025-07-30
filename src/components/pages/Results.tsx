@@ -5,19 +5,6 @@ import { Button } from '../ui/Button';
 export function Results() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Auto-slide every 6 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
-    }, 6000);
-
-    return () => clearInterval(interval);
-  }, [beforeAfterResults.length]);
-
   const beforeAfterResults = [
     {
       id: '1',
@@ -80,6 +67,19 @@ export function Results() {
       clientName: "Sophie W."
     }
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Auto-slide every 6 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [beforeAfterResults.length]);
 
   const caseStudy = {
     name: 'Keeley',
