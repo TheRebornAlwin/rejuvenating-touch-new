@@ -51,7 +51,7 @@ export function Treatments() {
         'Promotes natural detoxification',
         'Improves circulation and skin tone',
       ],
-      image: '',
+      image: '/assets/lymphaticdrainagefacial.jpeg',
       category: 'facials'
     },
     {
@@ -95,7 +95,7 @@ export function Treatments() {
         'Significantly improves skin texture and tone',
         'Minimizes acne scars and dark spots effectively',
       ],
-      image: '',
+      image: '/assets/propowerpeell.jpeg',
       category: 'peels'
     },
     {
@@ -109,7 +109,7 @@ export function Treatments() {
         'Comprehensive pre and post care',
         'Customized to your skin needs',
       ],
-      image: '',
+      image: '/assets/propowerpeel60mins.jpg',
       category: 'peels'
     },
 
@@ -237,7 +237,7 @@ export function Treatments() {
         'Stress relief in key areas',
         'Natural mood enhancement',
       ],
-      image: '',
+      image: '/assets/swedishbackonlymassage.jpg',
       category: 'massages'
     },
     {
@@ -265,7 +265,7 @@ export function Treatments() {
         'Intensive heat therapy',
         'Perfect for chronic tension',
       ],
-      image: '',
+      image: '/assets/hotstonebackonlymassage.jpeg',
       category: 'massages'
     },
     {
@@ -387,7 +387,7 @@ export function Treatments() {
         'Long-lasting results',
         'Professional application',
       ],
-      image: '',
+      image: '/assets/classiceyelashes.jpeg',
       category: 'beauty'
     },
 
@@ -415,7 +415,7 @@ export function Treatments() {
         'Aromatherapy benefits',
         'Luxury enhancement',
       ],
-      image: '',
+      image: '/assets/jellymask.jpeg',
       category: 'add-ons'
     },
     {
@@ -454,7 +454,7 @@ export function Treatments() {
         'Soothes and calms irritated skin',
         'Enhances product absorption',
       ],
-      image: '',
+      image: '/assets/coldglobes.jpeg',
       category: 'add-ons'
     },
     {
@@ -467,7 +467,7 @@ export function Treatments() {
         'Cooling and refreshing sensation',
         'Leaves skin plump and glowing',
       ],
-      image: '',
+      image: '/assets/coldstonemask.jpeg',
       category: 'add-ons'
     }
   ];
@@ -653,12 +653,22 @@ export function Treatments() {
             {filteredTreatments.map((treatment) => (
               <div key={treatment.id} className="luxury-card rounded-lg overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
                 {/* Treatment Image Placeholder */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-sage/20 via-gold/15 to-forest/15 flex items-center justify-center border-b border-gold/20">
-                  <div className="text-center space-y-2 lg:space-y-3 p-6 lg:p-8">
-                    <Sparkles className="w-12 lg:w-16 h-12 lg:h-16 text-gold mx-auto" />
-                    <p className="text-forest font-serif text-base lg:text-lg">{treatment.name}</p>
+                {treatment.image ? (
+                  <div className="aspect-[4/3] border-b border-gold/20">
+                    <img 
+                      src={treatment.image} 
+                      alt={treatment.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
+                ) : (
+                  <div className="aspect-[4/3] bg-gradient-to-br from-sage/20 via-gold/15 to-forest/15 flex items-center justify-center border-b border-gold/20">
+                    <div className="text-center space-y-2 lg:space-y-3 p-6 lg:p-8">
+                      <Sparkles className="w-12 lg:w-16 h-12 lg:h-16 text-gold mx-auto" />
+                      <p className="text-forest font-serif text-base lg:text-lg">{treatment.name}</p>
+                    </div>
+                  </div>
+                )}
                 
                 {/* Content */}
                 <div className="p-6 lg:p-8 space-y-4 lg:space-y-6">
