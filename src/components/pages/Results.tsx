@@ -12,57 +12,63 @@ export function Results() {
   const beforeAfterResults = [
     {
       id: '1',
-      before: '',
-      after: '',
+      beforeAfter: '/assets/hp1ta.jpg',
       caption: 'Acne Scarring Treatment',
       sessions: 4,
       treatment: 'Pro Power Peel Series',
-      description: 'Significant improvement in acne scarring and skin texture'
+      description: 'Significant improvement in acne scarring and skin texture',
+      testimonial: "I never thought my acne scars would fade this much. Val's Pro Power Peel series completely transformed my skin and gave me back my confidence.",
+      clientName: "Sarah M."
     },
     {
       id: '2',
-      before: '',
-      after: '',
+      beforeAfter: '/assets/hp2ta.jpg',
       caption: 'Pigmentation Correction',
       sessions: 6,
       treatment: 'Targeted Chemical Peels',
-      description: 'Dramatic reduction in dark spots and even skin tone'
+      description: 'Dramatic reduction in dark spots and even skin tone',
+      testimonial: "The dark spots that bothered me for years are finally gone. Val's expertise with chemical peels is incredible - she knew exactly what my skin needed.",
+      clientName: "Emma L."
     },
     {
       id: '3',
-      before: '',
-      after: '',
+      beforeAfter: '/assets/hp3ta.jpg',
       caption: 'Anti-Aging Treatment',
       sessions: 5,
       treatment: 'Hydrating Facials + Peels',
-      description: 'Reduced fine lines and improved skin elasticity'
+      description: 'Reduced fine lines and improved skin elasticity',
+      testimonial: "My skin looks years younger! The combination of facials and peels that Val recommended worked better than any expensive cream I've tried.",
+      clientName: "Kate R."
     },
     {
       id: '4',
-      before: '',
-      after: '',
+      beforeAfter: '',
       caption: 'Skin Texture Improvement',
       sessions: 3,
       treatment: 'Deep Cleansing Facials',
-      description: 'Smoother, more refined skin texture and pore size'
+      description: 'Smoother, more refined skin texture and pore size',
+      testimonial: "My skin feels like silk now. The deep cleansing facials made such a difference to my pore size and overall texture.",
+      clientName: "Jessica T."
     },
     {
       id: '5',
-      before: '',
-      after: '',
+      beforeAfter: '',
       caption: 'Overall Skin Health',
       sessions: 8,
       treatment: 'Comprehensive Care Plan',
-      description: 'Complete skin transformation and long-term health'
+      description: 'Complete skin transformation and long-term health',
+      testimonial: "Val's comprehensive approach changed everything. It's not just about one treatment - it's about understanding your skin's journey.",
+      clientName: "Rachel K."
     },
     {
       id: '6',
-      before: '',
-      after: '',
+      beforeAfter: '',
       caption: 'Hydration & Glow',
       sessions: 4,
       treatment: 'Intensive Hydrating Series',
-      description: 'Restored moisture balance and natural radiance'
+      description: 'Restored moisture balance and natural radiance',
+      testimonial: "My skin has never been more hydrated and glowing. People keep asking what I'm using - it's all thanks to Val's treatments!",
+      clientName: "Sophie W."
     }
   ];
 
@@ -115,32 +121,27 @@ export function Results() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto px-4 lg:px-0">
             {/* Main Display */}
-            <div className="relative bg-cream rounded-lg overflow-hidden mb-6 lg:mb-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                {/* Before */}
-                <div className="relative">
-                  <div className="w-full aspect-square bg-gradient-to-br from-charcoal/10 via-olive/10 to-forest/15 flex items-center justify-center">
-                    <div className="text-center space-y-2 lg:space-y-3">
-                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-charcoal/40 mx-auto" />
-                      <p className="text-charcoal/60 font-serif text-base lg:text-lg">Before Photo</p>
-                    </div>
-                  </div>
-                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-charcoal/80 text-white px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
-                    Before
-                  </div>
-                </div>
-                
-                {/* After */}
-                <div className="relative">
-                  <div className="w-full aspect-square bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+            <div className="relative bg-cream rounded-lg overflow-hidden mb-6 lg:mb-8 shadow-lg">
+              {/* Single Before/After Image */}
+              <div className="relative">
+                {beforeAfterResults[currentSlide].beforeAfter ? (
+                  <img 
+                    src={beforeAfterResults[currentSlide].beforeAfter} 
+                    alt={`Before and After - ${beforeAfterResults[currentSlide].caption}`}
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                ) : (
+                  <div className="w-full aspect-[4/3] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
                     <div className="text-center space-y-2 lg:space-y-3">
                       <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
-                      <p className="text-forest/60 font-serif text-base lg:text-lg">After Photo</p>
+                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
                     </div>
                   </div>
-                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-2 lg:px-3 py-1 rounded text-sm lg:text-base">
-                    After
-                  </div>
+                )}
+                
+                {/* Before/After Label */}
+                <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold">
+                  Before & After
                 </div>
               </div>
               
@@ -160,13 +161,33 @@ export function Results() {
             </div>
             
             {/* Current Result Info */}
-            <div className="text-center space-y-3 lg:space-y-4">
+            <div className="text-center space-y-4 lg:space-y-6">
               <h3 className="text-xl lg:text-2xl font-serif text-forest">
                 {beforeAfterResults[currentSlide].caption}
               </h3>
-              <p className="text-base lg:text-lg text-white">
+              <p className="text-base lg:text-lg text-forest">
                 {beforeAfterResults[currentSlide].description}
               </p>
+              
+              {/* Client Testimonial */}
+              <div className="bg-white p-4 lg:p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+                <div className="flex items-center justify-center mb-3 lg:mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 lg:w-5 h-4 lg:h-5 text-gold fill-current" />
+                  ))}
+                </div>
+                <p className="text-forest italic text-base lg:text-lg leading-relaxed mb-3 lg:mb-4">
+                  "{beforeAfterResults[currentSlide].testimonial}"
+                </p>
+                <div className="text-center">
+                  <p className="font-serif font-bold text-forest text-base lg:text-lg">
+                    {beforeAfterResults[currentSlide].clientName}
+                  </p>
+                  <p className="text-forest/70 text-sm">
+                    {beforeAfterResults[currentSlide].treatment} • {beforeAfterResults[currentSlide].sessions} sessions
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
