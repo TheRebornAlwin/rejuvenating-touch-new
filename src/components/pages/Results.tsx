@@ -119,12 +119,12 @@ export function Results() {
       {/* Interactive Before/After Gallery */}
       <section className="py-16 lg:py-32 bg-white">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto px-4 lg:px-0">
+          <div className="max-w-md mx-auto px-4 lg:px-0">
             {/* Main Display */}
             <div className="relative bg-cream rounded-lg overflow-hidden mb-6 lg:mb-8 shadow-lg">
               {/* Single Before/After Image */}
               <div className="relative">
-                <div className="w-full aspect-[0.9/1] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                <div className="w-full aspect-[0.8/1] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
                     <div className="text-center space-y-2 lg:space-y-3">
                       <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
                       <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
