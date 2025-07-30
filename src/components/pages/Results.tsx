@@ -9,6 +9,15 @@ export function Results() {
     window.scrollTo(0, 0);
   }, []);
 
+  // Auto-slide every 6 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % beforeAfterResults.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [beforeAfterResults.length]);
+
   const beforeAfterResults = [
     {
       id: '1',
@@ -118,66 +127,70 @@ export function Results() {
 
       {/* Interactive Before/After Gallery */}
       <section className="py-16 lg:py-32 bg-white">
-        <div className="container-custom">
-          <div className="max-w-md mx-auto px-4 lg:px-0">
-            {/* Main Display */}
-            <div className="relative bg-cream rounded-lg overflow-hidden mb-6 lg:mb-8 shadow-lg">
-              {/* Single Before/After Image */}
-              <div className="relative">
-                <div className="w-full aspect-[1.2/1] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
-                    <div className="text-center space-y-2 lg:space-y-3">
-                      <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
-                      <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
-                    </div>
+        <div className="container-custom max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Image Gallery */}
+            <div className="lg:col-span-1 flex justify-center">
+              <div className="relative bg-cream rounded-lg overflow-hidden shadow-lg max-w-xl w-full">
+                {/* Single Before/After Image */}
+                <div className="relative">
+                  <div className="w-full aspect-[1.2/1] bg-gradient-to-br from-gold/15 via-sage/10 to-forest/15 flex items-center justify-center">
+                      <div className="text-center space-y-2 lg:space-y-3">
+                        <Star className="w-12 lg:w-16 h-12 lg:h-16 text-forest/40 mx-auto fill-current" />
+                        <p className="text-forest/60 font-serif text-base lg:text-lg">Before & After</p>
+                      </div>
+                  </div>
+                  
+                  {/* Before/After Label */}
+                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold">
+                    Before & After
+                  </div>
                 </div>
                 
-                {/* Before/After Label */}
-                <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold">
-                  Before & After
-                </div>
+                {/* Navigation */}
+                <button 
+                  onClick={prevSlide}
+                  className="absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
+                >
+                  <ChevronLeft className="w-5 lg:w-6 h-5 lg:h-6 text-charcoal" />
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  className="absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
+                >
+                  <ChevronRight className="w-5 lg:w-6 h-5 lg:h-6 text-charcoal" />
+                </button>
               </div>
-              
-              {/* Navigation */}
-              <button 
-                onClick={prevSlide}
-                className="absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-              >
-                <ChevronLeft className="w-5 lg:w-6 h-5 lg:h-6 text-charcoal" />
-              </button>
-              <button 
-                onClick={nextSlide}
-                className="absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-              >
-                <ChevronRight className="w-5 lg:w-6 h-5 lg:h-6 text-charcoal" />
-              </button>
             </div>
             
-            {/* Current Result Info */}
-            <div className="text-center space-y-4 lg:space-y-6">
-              <h3 className="text-xl lg:text-2xl font-serif text-forest">
-                {beforeAfterResults[currentSlide].caption}
-              </h3>
-              <p className="text-base lg:text-lg text-forest">
-                {beforeAfterResults[currentSlide].description}
-              </p>
-              
-              {/* Client Testimonial */}
-              <div className="bg-white p-4 lg:p-6 rounded-lg shadow-md max-w-2xl mx-auto">
-                <div className="flex items-center justify-center mb-3 lg:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 lg:w-5 h-4 lg:h-5 text-gold fill-current" />
-                  ))}
-                </div>
-                <p className="text-forest italic text-base lg:text-lg leading-relaxed mb-3 lg:mb-4">
-                  "{beforeAfterResults[currentSlide].testimonial}"
+            {/* Right Column - Testimonial */}
+            <div className="lg:col-span-1">
+              <div className="space-y-4 lg:space-y-6">
+                <h3 className="text-xl lg:text-2xl font-serif text-forest text-center lg:text-left">
+                  {beforeAfterResults[currentSlide].caption}
+                </h3>
+                <p className="text-base lg:text-lg text-forest text-center lg:text-left">
+                  {beforeAfterResults[currentSlide].description}
                 </p>
-                <div className="text-center">
-                  <p className="font-serif font-bold text-forest text-base lg:text-lg">
-                    {beforeAfterResults[currentSlide].clientName}
+                
+                {/* Client Testimonial */}
+                <div className="bg-white p-4 lg:p-6 rounded-lg shadow-md">
+                  <div className="flex items-center justify-center lg:justify-start mb-3 lg:mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 lg:w-5 h-4 lg:h-5 text-gold fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-forest italic text-base lg:text-lg leading-relaxed mb-3 lg:mb-4 text-center lg:text-left">
+                    "{beforeAfterResults[currentSlide].testimonial}"
                   </p>
-                  <p className="text-forest/70 text-sm">
-                    {beforeAfterResults[currentSlide].treatment} • {beforeAfterResults[currentSlide].sessions} sessions
-                  </p>
+                  <div className="text-center lg:text-left">
+                    <p className="font-serif font-bold text-forest text-base lg:text-lg">
+                      {beforeAfterResults[currentSlide].clientName}
+                    </p>
+                    <p className="text-forest/70 text-sm">
+                      {beforeAfterResults[currentSlide].treatment} • {beforeAfterResults[currentSlide].sessions} sessions
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
