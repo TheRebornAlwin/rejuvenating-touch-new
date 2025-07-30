@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Clock, Star, Sparkles, Leaf, Heart, Zap, Waves, Scissors } from 'lucide-react';
+import { Clock, Star, Sparkles, Leaf, Heart, Zap, Waves, Scissors, Search } from 'lucide-react';
 import type { Treatment } from '../../types';
 
 export function Treatments() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -443,6 +444,32 @@ export function Treatments() {
       image: '',
       category: 'add-ons'
     }
+    {
+      id: '32',
+      name: 'Cold Globes',
+      price: '£8',
+      description: 'Cooling facial globes treatment to reduce puffiness and soothe skin. Perfect finishing touch for any facial treatment.',
+      benefits: [
+        'Reduces facial puffiness instantly',
+        'Soothes and calms irritated skin',
+        'Enhances product absorption',
+      ],
+      image: '',
+      category: 'add-ons'
+    },
+    {
+      id: '33',
+      name: 'Jelly Mask',
+      price: '£12',
+      description: 'Hydrating jelly mask treatment that provides intense moisture and cooling relief. Leaves skin plump and refreshed.',
+      benefits: [
+        'Intense hydration boost',
+        'Cooling and refreshing sensation',
+        'Leaves skin plump and glowing',
+      ],
+      image: '',
+      category: 'add-ons'
+    }
   ];
 
   const categories = [
@@ -456,9 +483,12 @@ export function Treatments() {
     { id: 'add-ons', name: 'Enhancement Add-ons', icon: Waves }
   ];
 
-  const filteredTreatments = activeCategory === 'all' 
-    ? treatments 
-    : treatments.filter(treatment => treatment.category === activeCategory);
+  const filteredTreatments = treatments.filter(treatment => {
+    const matchesCategory = activeCategory === 'all' || treatment.category === activeCategory;
+    const matchesSearch = treatment.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         treatment.description.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   const handleBookNow = () => {
     window.open('https://fresha.com', '_blank');
@@ -475,8 +505,8 @@ export function Treatments() {
             </div>
             
             <h1 className="text-4xl lg:text-7xl font-serif text-forest leading-tight">
-              <span className="text-center lg:text-left block">Professional Treatments.</span>
-              <span className="block text-forest text-center lg:text-left">Tailored for You.</span>
+              <span className="text-center block">Professional Treatments.</span>
+              <span className="block text-forest text-center">Tailored for You.</span>
             </h1>
             
             <p className="text-lg lg:text-2xl text-forest leading-relaxed max-w-3xl mx-auto">
@@ -490,7 +520,23 @@ export function Treatments() {
       {/* Category Tabs */}
       <section className="py-8 lg:py-16 ethereal-creme-gradient border-y border-gold/20">
         <div className="container-custom">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap lg:justify-center gap-2 lg:gap-3 px-4">
+          <div className="space-y-4 lg:space-y-6">
+            {/* Search Bar */}
+            <div className="max-w-md mx-auto px-4">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-forest/60" />
+                <input
+                  type="text"
+                  placeholder="Search treatments..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 border-2 border-forest/20 rounded-full focus:border-gold focus:outline-none transition-colors text-forest placeholder-forest/60"
+                />
+              </div>
+            </div>
+            
+            {/* Category Buttons */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap lg:justify-center gap-2 lg:gap-3 px-4">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -506,12 +552,38 @@ export function Treatments() {
               </button>
             ))}
           </div>
+          </div>
         </div>
       </section>
 
       {/* Services Grid */}
       <section className="py-12 lg:py-32 tranquil-gradient">
         <div className="container-custom">
+          {filteredTreatments.length === 0 ? (
+            <div className="text-center py-16 lg:py-24 px-4">
+              <div className="max-w-md mx-auto">
+                <Search className="w-16 h-16 text-forest/40 mx-auto mb-4" />
+                <h3 className="text-xl lg:text-2xl font-serif text-forest mb-4">
+                  No treatments found
+                </h3>
+                <p className="text-forest/70 mb-6">
+                  {searchTerm 
+                    ? `No treatments match "${searchTerm}". Try a different search term.`
+                    : "No treatments found in this category."
+                  }
+                </p>
+                <button
+                  onClick={() => {
+                    setSearchTerm('');
+                    setActiveCategory('all');
+                  }}
+                  className="text-forest font-semibold hover:text-gold transition-colors"
+                >
+                  Clear search and show all treatments
+                </button>
+              </div>
+            </div>
+          ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 px-4 lg:px-0">
             {/* Free Consultation Service - First in Grid */}
             <div className="luxury-card rounded-lg overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 border-4 border-gold">
@@ -627,6 +699,7 @@ export function Treatments() {
               </div>
             ))}
           </div>
+          )}
         </div>
       </section>
 
