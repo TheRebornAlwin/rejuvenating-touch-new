@@ -265,11 +265,11 @@ export function Home() {
             {/* Left - Client Image Placeholder */}
             <div className="space-y-4 lg:space-y-6 animate-scale-in">
               <div className="aspect-[4/5] lg:aspect-[3/2] premium-card rounded-xl flex items-center justify-center border border-gold/20">
-                <div className="text-center p-4 lg:p-6">
-                  <Users className="w-12 lg:w-16 h-12 lg:h-16 text-forest mx-auto mb-3 lg:mb-4" />
-                  <p className="text-forest font-serif text-base lg:text-lg">Cardiff Client Portrait</p>
-                  <p className="text-forest/70 text-sm">Age 28, After Transformation</p>
-                </div>
+                <img 
+                  src="/assets/whycardiffwomenchooseus.jpg" 
+                  alt="Cardiff women who choose our aesthetic treatments" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
             

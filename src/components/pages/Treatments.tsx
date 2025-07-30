@@ -37,7 +37,7 @@ export function Treatments() {
         'Premium skincare products',
         'Relaxing facial massage included',
       ],
-      image: '',
+      image: '/assets/luxuryfacial.jpg',
       category: 'facials'
     },
     {
@@ -65,7 +65,7 @@ export function Treatments() {
         'Helps prevent back acne',
         'Smooth, hydrated skin',
       ],
-      image: '',
+      image: '/assets/backfacial.jpg',
       category: 'facials'
     },
     {
@@ -124,7 +124,7 @@ export function Treatments() {
         'Reduces puffiness while nourishing',
         'Maximum relaxation and results',
       ],
-      image: '',
+      image: '/assets/luxuryandlymphaticfacialcombo.jpg',
       category: 'combinations'
     },
     {
@@ -137,7 +137,7 @@ export function Treatments() {
         'Gentle yet effective treatment',
         'Perfect introduction to our services',
       ],
-      image: '',
+      image: '/assets/basicandlymphaticfacial.jpg',
       category: 'combinations'
     },
     {
@@ -165,7 +165,7 @@ export function Treatments() {
         'Complete stress relief',
         'Premium skin and body care',
       ],
-      image: '',
+      image: '/assets/luxuryfacialbackmassage.jpg',
       category: 'combinations'
     },
     {
@@ -179,7 +179,7 @@ export function Treatments() {
         'Combines cleansing with relaxation',
         'Addresses skin and muscle concerns',
       ],
-      image: '',
+      image: '/assets/backfacialbackmassage.jpg',
       category: 'combinations'
     },
 
@@ -195,7 +195,7 @@ export function Treatments() {
         'Improves circulation',
         'Reduces muscle tension',
       ],
-      image: '',
+      image: '/assets/swedishfullbodymassage.jpg',
       category: 'massages'
     },
     {
@@ -251,7 +251,7 @@ export function Treatments() {
         'Ultimate relaxation experience',
         'Improves circulation dramatically',
       ],
-      image: '',
+      image: '/assets/hotstonefullbodymassage.jpg',
       category: 'massages'
     },
     {
@@ -279,7 +279,7 @@ export function Treatments() {
         'Relieves tired feet',
         'Improves overall circulation',
       ],
-      image: '',
+      image: '/assets/footmassage.jpg',
       category: 'massages'
     },
 
@@ -294,7 +294,7 @@ export function Treatments() {
         'Professional technique',
         'Reduces hair regrowth over time',
       ],
-      image: '',
+      image: '/assets/fulllegwaxing.jpg',
       category: 'waxing'
     },
     {
@@ -307,7 +307,7 @@ export function Treatments() {
         'Perfect for maintenance',
         'Professional results',
       ],
-      image: '',
+      image: '/assets/halflegwaxing.jpg',
       category: 'waxing'
     },
     {
