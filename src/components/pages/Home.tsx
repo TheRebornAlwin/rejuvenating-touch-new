@@ -97,14 +97,14 @@ export function Home() {
       sessions: "4 sessions" 
     },
     { 
-      before: '', 
-      after: '', 
+      before: '/assets/hp2tb.jpg', 
+      after: '/assets/hp2ta.jpg', 
       caption: "Pigmentation correction", 
       sessions: "6 sessions" 
     },
     { 
-      before: '', 
-      after: '', 
+      before: '/assets/hp3tb.jpg', 
+      after: '/assets/hp3ta.jpg', 
       caption: "Fine line reduction", 
       sessions: "5 sessions" 
     },

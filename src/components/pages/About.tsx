@@ -79,13 +79,11 @@ export function About() {
             
             <div className="animate-scale-in">
               <div className="aspect-[4/5] lg:aspect-[4/3] relative overflow-hidden rounded-2xl elegant-shadow">
-                <div className="w-full h-full bg-gradient-to-br from-gold/20 via-sage/15 to-forest/20 flex items-center justify-center">
-                  <div className="text-center space-y-3 lg:space-y-4">
-                    <Heart className="w-16 lg:w-24 h-16 lg:h-24 text-forest/40 mx-auto animate-float" />
-                    <p className="text-olive/60 font-serif text-lg lg:text-xl">Professional Portrait</p>
-                    <p className="text-sage/60 text-sm">Val in her Cardiff clinic</p>
-                  </div>
-                </div>
+                <img 
+                  src="/assets/aboutvalheroimg.jpg" 
+                  alt="Val - Your Personal Skin Specialist in her Cardiff clinic" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
             </div>
