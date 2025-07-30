@@ -165,29 +165,22 @@ export function Results() {
             
             {/* Right Column - Testimonial */}
             <div className="lg:col-span-1">
-              <div className="space-y-4 lg:space-y-6">
-                <h3 className="text-xl lg:text-2xl font-serif text-forest text-center lg:text-left">
-                  {beforeAfterResults[currentSlide].caption}
-                </h3>
-                <p className="text-base lg:text-lg text-forest text-center lg:text-left">
-                  {beforeAfterResults[currentSlide].description}
-                </p>
-                
+              <div className="flex items-center justify-center lg:justify-start h-full">
                 {/* Client Testimonial */}
-                <div className="bg-white p-4 lg:p-6 rounded-lg shadow-md">
+                <div className="bg-white p-6 lg:p-8 rounded-lg shadow-md w-full transition-opacity duration-500 ease-in-out" key={currentSlide}>
                   <div className="flex items-center justify-center lg:justify-start mb-3 lg:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 lg:w-5 h-4 lg:h-5 text-gold fill-current" />
                     ))}
                   </div>
-                  <p className="text-forest italic text-base lg:text-lg leading-relaxed mb-3 lg:mb-4 text-center lg:text-left">
+                  <p className="text-forest italic text-lg lg:text-xl leading-relaxed mb-4 lg:mb-6 text-center lg:text-left">
                     "{beforeAfterResults[currentSlide].testimonial}"
                   </p>
                   <div className="text-center lg:text-left">
-                    <p className="font-serif font-bold text-forest text-base lg:text-lg">
+                    <p className="font-serif font-bold text-forest text-lg lg:text-xl">
                       {beforeAfterResults[currentSlide].clientName}
                     </p>
-                    <p className="text-forest/70 text-sm">
+                    <p className="text-forest/70 text-sm lg:text-base">
                       {beforeAfterResults[currentSlide].treatment} • {beforeAfterResults[currentSlide].sessions} sessions
                     </p>
                   </div>
