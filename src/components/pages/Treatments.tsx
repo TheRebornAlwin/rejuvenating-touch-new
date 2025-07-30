@@ -484,10 +484,17 @@ export function Treatments() {
   ];
 
   const filteredTreatments = treatments.filter(treatment => {
-    const matchesCategory = activeCategory === 'all' || treatment.category === activeCategory;
     const matchesSearch = treatment.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          treatment.description.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesCategory && matchesSearch;
+    
+    // If there's a search term, search across all treatments regardless of category
+    if (searchTerm.trim()) {
+      return matchesSearch;
+    }
+    
+    // If no search term, filter by category as usual
+    const matchesCategory = activeCategory === 'all' || treatment.category === activeCategory;
+    return matchesCategory;
   });
 
   const handleBookNow = () => {
