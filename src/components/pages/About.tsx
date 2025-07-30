@@ -67,7 +67,8 @@ export function About() {
                 </h1>
                 
                 <p className="text-lg lg:text-2xl text-olive leading-relaxed">
-                  Dedicated to transforming skin through science, genuine care, 
+                <p className="text-lg lg:text-2xl text-dark-sage leading-relaxed">
+                  Dedicated to transforming skin through science, genuine care,
                   and completely personalized expertise.
                 </p>
                 <p className="text-forest text-base lg:text-xl leading-relaxed font-medium tracking-wide mt-4 lg:mt-6">

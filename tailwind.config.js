@@ -10,6 +10,7 @@ export default {
         charcoal: '#2D2D2D',
         olive: '#3A4A2A',
         sage: '#8A9A7A',
+        'dark-sage': '#7A8A6A',
         pearl: '#F8F6F0',
       },
       fontFamily: {
