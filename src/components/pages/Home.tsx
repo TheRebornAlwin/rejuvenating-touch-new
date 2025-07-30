@@ -141,12 +141,13 @@ export function Home() {
             <div className="relative animate-scale-in">
               {/* Treatment Space Image Placeholder */}
               <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
-                <img 
-                  src="/assets/propowerpeel.jpg" 
-                  alt="Pro Power Peel Treatment - Professional aesthetic treatment by Val" 
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
+                <div className="w-full h-full premium-white-gradient flex items-center justify-center border-2 border-gold/20">
+                  <div className="text-center space-y-4">
+                    <Heart className="w-24 h-24 text-gold/60 mx-auto animate-float" />
+                    <p className="text-forest/60 font-serif text-lg">Val's Premium Treatment Space</p>
+                    <p className="text-forest/50 text-sm">Serene, private clinic environment</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
