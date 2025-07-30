@@ -460,7 +460,8 @@ export function Treatments() {
     {
       id: '33',
       name: 'Jelly Mask',
-      price: '£12',
+      price: '£7
+      ',
       description: 'Hydrating jelly mask treatment that provides intense moisture and cooling relief. Leaves skin plump and refreshed.',
       benefits: [
         'Intense hydration boost',
