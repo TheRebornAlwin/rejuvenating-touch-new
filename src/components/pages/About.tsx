@@ -58,7 +58,7 @@ export function About() {
               <div className="space-y-4 lg:space-y-6">
                 <div className="flex items-center space-x-2 lg:space-x-3 mb-4 lg:mb-6">
                   <Sparkles className="w-6 lg:w-8 h-6 lg:h-8 text-gold animate-float" />
-                  <span className="text-sage uppercase tracking-wider font-semibold text-sm lg:text-base">Meet Your Aesthetician</span>
+                  <span className="text-forest uppercase tracking-wider font-semibold text-sm lg:text-base">Meet Your Aesthetician</span>
                 </div>
                 
                 <h1 className="text-3xl lg:text-7xl font-serif text-forest leading-tight">
@@ -66,7 +66,7 @@ export function About() {
                   <span className="block text-forest">Skin Specialist</span>
                 </h1>
                 
-                <p className="text-lg lg:text-2xl text-dark-sage leading-relaxed">
+                <p className="text-lg lg:text-2xl text-forest leading-relaxed">
                   Dedicated to transforming skin through science, genuine care,
                   and completely personalized expertise.
                 </p>
