@@ -443,7 +443,7 @@ export function Treatments() {
       ],
       image: '',
       category: 'add-ons'
-    }
+    },
     {
       id: '32',
       name: 'Cold Globes',
