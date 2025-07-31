@@ -23,7 +23,7 @@ export function Treatments() {
         'Gentle exfoliation for smoother texture',
         'Hydrating mask for instant glow',
       ],
-      image: '',
+      image: '/assets/backfacial.jpg',
       category: 'facials'
     },
     {
@@ -79,7 +79,7 @@ export function Treatments() {
         'Prevents ingrown hairs',
         'Improves skin texture and tone',
       ],
-      image: '',
+      image: '/assets/glutesfacial.jpg',
       category: 'facials'
     },
 
