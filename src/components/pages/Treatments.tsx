@@ -79,7 +79,7 @@ export function Treatments() {
         'Prevents ingrown hairs',
         'Improves skin texture and tone',
       ],
-      image: '/assets/glutesfacialll.jpg',
+      image: 'assets/glutesssfacial.jpg',
       category: 'facials'
     },
 
