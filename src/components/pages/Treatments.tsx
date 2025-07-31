@@ -265,7 +265,7 @@ export function Treatments() {
         'Intensive heat therapy',
         'Perfect for chronic tension',
       ],
-      image: '/assets/hotstonebackonlymassage.jpeg',
+      image: '/assets/hotstonebackonlymassagggee.jpeg',
       category: 'massages'
     },
     {
