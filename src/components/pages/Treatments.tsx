@@ -428,7 +428,7 @@ export function Treatments() {
         'Natural exfoliation',
         'Prepares skin for treatments',
       ],
-      image: '/assets/bodybrushingaddon.jpg',
+      image: '/assets/bodybrushinggg.jpg',
       category: 'add-ons'
     },
     {
