@@ -109,8 +109,8 @@ export function Home() {
       sessions: "5 sessions" 
     },
     { 
-      before: '', 
-      after: '', 
+      before: '/assets/hp4tb.jpg', 
+      after: '/assets/hp4ta.jpg', 
       caption: "Texture refinement", 
       sessions: "3 sessions" 
     }
