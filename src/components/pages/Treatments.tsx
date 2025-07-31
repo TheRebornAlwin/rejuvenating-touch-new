@@ -402,7 +402,7 @@ export function Treatments() {
         'Complete upper body care',
         'Enhanced relaxation',
       ],
-      image: '/assets/chestfaceandscalpaddon.jpg',
+      image: '/assets/chestfaceandscalpppp.jpg',
       category: 'add-ons'
     },
     {
