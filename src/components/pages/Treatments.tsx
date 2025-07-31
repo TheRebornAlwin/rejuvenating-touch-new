@@ -23,7 +23,7 @@ export function Treatments() {
         'Gentle exfoliation for smoother texture',
         'Hydrating mask for instant glow',
       ],
-      image: '/assets/backfacial.jpg',
+      image: '/assets/basicfacial.jpg',
       category: 'facials'
     },
     {
