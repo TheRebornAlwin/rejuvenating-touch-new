@@ -23,7 +23,7 @@ export function Treatments() {
         'Gentle exfoliation for smoother texture',
         'Hydrating mask for instant glow',
       ],
-      image: '/assets/basicfaciallllll.jpg',
+      image: '/assets/basicccfacialllll.jpg',
       category: 'facials'
     },
     {
@@ -37,7 +37,7 @@ export function Treatments() {
         'Premium skincare products',
         'Relaxing facial massage included',
       ],
-      image: '/assets/luxuryfacial.jpg',
+      image: '/assets/luxuryfaciallllll.jpg',
       category: 'facials'
     },
     {
@@ -137,7 +137,7 @@ export function Treatments() {
         'Gentle yet effective treatment',
         'Perfect introduction to our services',
       ],
-      image: '/assets/basicandlymphaticfacial.jpg',
+      image: '/assets/basicfaciallymphaticdrainage.webp',
       category: 'combinations'
     },
     {
@@ -151,7 +151,7 @@ export function Treatments() {
         'Stress relief and skin benefits',
         'Great value combination',
       ],
-      image: '',
+      image: '/assets/basicfacialbackmassage.jpg',
       category: 'combinations'
     },
     {
@@ -223,7 +223,7 @@ export function Treatments() {
         'Customized oil blends',
         'Mental and physical wellness',
       ],
-      image: '',
+      image: '/assets/aromaaatherapyfullbodymassage.jpg',
       category: 'massages'
     },
     {
@@ -265,7 +265,7 @@ export function Treatments() {
         'Intensive heat therapy',
         'Perfect for chronic tension',
       ],
-      image: '/assets/hotstonebackonlymassagggee.jpeg',
+      image: '/assets/hotstonebackonlymassage.jpeg',
       category: 'massages'
     },
     {
@@ -595,11 +595,12 @@ export function Treatments() {
             {/* Free Consultation Service - First in Grid */}
             <div className="luxury-card rounded-lg overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 border-4 border-gold">
               {/* Consultation Image Placeholder */}
-              <div className="aspect-[4/3] soft-creme-gradient flex items-center justify-center border-b border-gold/20">
-                <div className="text-center space-y-2 lg:space-y-3 p-6 lg:p-8">
-                  <Heart className="w-16 lg:w-20 h-16 lg:h-20 text-gold mx-auto animate-float" />
-                  <p className="text-forest font-serif text-base lg:text-lg">Free Skin Analysis & Consultation</p>
-                </div>
+              <div className="aspect-[4/3] border-b border-gold/20">
+                <img 
+                  src="/assets/Skin-Consultation.jpg" 
+                  alt="Free First Time Skin Consultation"
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Content */}
