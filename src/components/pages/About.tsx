@@ -214,14 +214,14 @@ export function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 px-4 lg:px-0">
             {values.map((value, index) => (
-              <div key={index} className="space-y-2 lg:space-y-6 group bg-white md:bg-transparent p-4 lg:p-0 rounded-lg md:rounded-none shadow-md md:shadow-none">
+              <div key={index} className="space-y-2 lg:space-y-6 group bg-white md:bg-transparent p-4 lg:p-0 rounded-lg md:rounded-none shadow-md md:shadow-none text-center">
                 <div className="w-12 lg:w-24 h-12 lg:h-24 bg-gold/20 rounded-full flex items-center justify-center mx-auto group-hover:bg-gold/30 transition-colors duration-500 soft-glow">
                   <value.icon className="w-6 lg:w-12 h-6 lg:h-12 text-gold" />
                 </div>
-                <h3 className="font-serif text-sm lg:text-3xl font-semibold text-forest leading-tight">
+                <h3 className="font-serif text-sm lg:text-3xl font-semibold text-forest leading-tight text-center">
                   {value.title}
                 </h3>
-                <p className="text-xs lg:text-lg text-forest leading-relaxed max-w-md mx-auto">
+                <p className="text-xs lg:text-lg text-forest leading-relaxed max-w-md mx-auto text-center">
                   {value.description}
                 </p>
                 <p className="text-forest leading-relaxed font-medium tracking-wide text-center max-w-md mx-auto mt-2 lg:mt-3 text-sm lg:text-base">
