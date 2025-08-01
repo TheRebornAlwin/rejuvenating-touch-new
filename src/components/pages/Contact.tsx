@@ -228,15 +228,15 @@ export function Contact() {
                     <div className="space-y-1 text-black text-sm lg:text-base">
                       <div className="flex justify-between">
                         <span>Monday - Friday</span>
-                        <span>9:00 AM - 7:00 PM</span>
+                        <span className="ml-8">9:00 AM - 7:00 PM</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Saturday</span>
-                        <span>9:00 AM - 5:00 PM</span>
+                        <span className="ml-8">9:00 AM - 5:00 PM</span>
                       </div>
                       <div className="flex justify-between opacity-60">
                         <span>Sunday</span>
-                        <span>Closed</span>
+                        <span className="ml-8">Closed</span>
                       </div>
                     </div>
                   </div>
