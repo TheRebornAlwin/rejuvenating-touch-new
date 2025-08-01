@@ -296,12 +296,13 @@ export function Contact() {
                 Follow us for daily skincare tips, client transformations, 
                 and behind-the-scenes content.
               </p>
-              <button 
-                onClick={handleInstagram}
+              <Button
+                href="#"
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+                onClick={handleInstagram}
               >
-                <span>Follow on Instagram</span>
-              </button>
+                Follow on Instagram
+              </Button>
             </div>
           </div>
           </div>
@@ -382,23 +383,18 @@ export function Contact() {
               href="tel:07809259269"
               target="_self"
               >
-                <span>Call Now: 07809 259269</span>
               Call Now: 07809 259269
             </Button>
             <Button
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
               href="#"
               >
-                <span>WhatsApp Support</span>
               Message on WhatsApp
             </Button>
+          </div>
           </div>
         </div>
       </section>
     </div>
   );
-}
-  )
-}
-  )
 }
