@@ -420,22 +420,21 @@ export function Home() {
                 {/* Testimonial Content */}
                 <div className={`lg:col-span-2 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="bg-white/10 backdrop-blur-sm p-6 lg:p-8 rounded-2xl premium-shadow relative">
-                <Quote className="w-8 lg:w-12 h-8 lg:h-12 text-gold/40 absolute top-4 lg:top-6 left-4 lg:left-6" />
-                <div className="pt-6 lg:pt-8">
-                  <div className="flex items-center space-x-1 mb-4 lg:mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 lg:w-6 h-5 lg:h-6 text-gold fill-gold" />
-                    ))}
-                  </div>
-                      <p className="text-base lg:text-lg text-white mb-4 lg:mb-6 italic leading-relaxed font-medium">
-                    "{testimonial.text}"
-                  </p>
-                  <div>
+                    <Quote className="w-8 lg:w-12 h-8 lg:h-12 text-gold/40 absolute top-4 lg:top-6 left-4 lg:left-6" />
+                    <div className="pt-6 lg:pt-8">
+                      <div className="flex items-center space-x-1 mb-4 lg:mb-6">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-base lg:text-lg text-white mb-4 lg:mb-6 italic">"{testimonial.text}"</p>
+                      {/* Content removed as requested */}
+                      <div>
                         <p className="font-serif font-bold text-gold text-base lg:text-lg">
-                      {testimonial.name}
-                    </p>
-                  </div>
-                </div>
+                          {testimonial.name}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
