@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock, Instagram, MessageCircle, Send } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { supabase } from '../../lib/supabase';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -8,18 +9,43 @@ export function Contact() {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission - could integrate with email service
-    console.log('Form submitted:', formData);
-    // For now, just reset the form
-    setFormData({ name: '', email: '', message: '' });
-    alert('Thank you for your message! We\'ll get back to you soon.');
+    
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([
+          {
+            name: formData.name.trim(),
+            email: formData.email.trim(),
+            message: formData.message.trim()
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      // Success - reset form and show success message
+      setFormData({ name: '', email: '', message: '' });
+      setSubmitStatus('success');
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -123,11 +149,31 @@ export function Contact() {
                 
                 <button 
                   type="submit"
-                  className="luxury-shimmer w-full flex items-center justify-center px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white"
+                  disabled={isSubmitting}
+                  className={`luxury-shimmer w-full flex items-center justify-center px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 ${
+                    isSubmitting 
+                      ? 'bg-forest/50 text-white/70 cursor-not-allowed' 
+                      : 'bg-forest text-white hover:bg-forest/90'
+                  }`}
                 >
                   <Send className="w-4 lg:w-5 h-4 lg:h-5 mr-2" />
-                  <span>Send Message</span>
+                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 </button>
+                
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    <p className="font-semibold">Message sent successfully!</p>
+                    <p className="text-sm">Thank you for your message. We'll get back to you within 24 hours.</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                    <p className="font-semibold">Error sending message</p>
+                    <p className="text-sm">Please try again or contact us directly at rejuvenatingtouchacbpm@gmail.com</p>
+                  </div>
+                )}
               </form>
             </div>
             
