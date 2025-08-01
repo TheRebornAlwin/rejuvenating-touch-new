@@ -317,7 +317,8 @@ export function Treatments() {
     {
       id: '22',
       name: 'Half Leg Waxing',
-      price: '£18',
+      price: '£16',
+      duration: '25 minutes',
       description: 'Lower leg waxing from knee to ankle. Perfect for maintaining smooth legs with regular treatments.',
       benefits: [
         'Quick and efficient',
