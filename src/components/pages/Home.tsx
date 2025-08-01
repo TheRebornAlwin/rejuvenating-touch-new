@@ -331,15 +331,15 @@ export function Home() {
               
               {/* Credentials */}
               <div className="space-y-2 lg:space-y-3 text-center lg:text-left">
-                <div className="flex items-center space-x-2 lg:space-x-3">
+                <div className="flex items-center space-x-2 lg:space-x-3 justify-center lg:justify-start">
                   <CheckCircle className="w-5 h-5 text-forest" />
                   <span className="text-sm lg:text-base text-forest font-medium">10+ Years Clinical Experience</span>
                 </div>
-                <div className="flex items-center space-x-2 lg:space-x-3">
+                <div className="flex items-center space-x-2 lg:space-x-3 justify-center lg:justify-start">
                   <CheckCircle className="w-5 h-5 text-forest" />
                   <span className="text-sm lg:text-base text-forest font-medium">500+ Successful Transformations</span>
                 </div>
-                <div className="flex items-center space-x-2 lg:space-x-3">
+                <div className="flex items-center space-x-2 lg:space-x-3 justify-center lg:justify-start">
                   <CheckCircle className="w-5 h-5 text-forest" />
                   <span className="text-sm lg:text-base text-forest font-medium">Dermalogica Certified Professional</span>
                 </div>

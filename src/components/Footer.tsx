@@ -35,8 +35,8 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-xl font-semibold mb-6 text-white text-center md:text-left">Quick Navigation</h4>
-            <ul className="space-y-3 text-center md:text-left">
+            <h4 className="font-serif text-xl font-semibold mb-6 text-white">Quick Navigation</h4>
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link 
@@ -54,11 +54,11 @@ export function Footer() {
           <div>
             <h4 className="font-serif text-xl font-semibold mb-6 text-white text-center md:text-left">Contact Information</h4>
             <ul className="space-y-4 text-center md:text-left">
-              <li className="flex items-center space-x-3">
+              <li className="flex items-center space-x-3 justify-center md:justify-start">
                 <Phone className="w-5 h-5 text-white/60" />
-                <span className="text-white">07809 259269</span>
+                <a href="tel:07809259269" className="text-white hover:text-gold transition-colors">07809 259269</a>
               </li>
-              <li className="flex items-start space-x-3">
+              <li className="flex items-start space-x-3 justify-center md:justify-start">
                 <Mail className="w-5 h-5 text-white/60" />
                 <a 
                   href="mailto:rejuvenatingtouchacbpm@gmail.com"
@@ -67,11 +67,11 @@ export function Footer() {
                   rejuvenatingtouchacbpm@gmail.com
                 </a>
               </li>
-              <li className="flex items-start space-x-3">
+              <li className="flex items-start space-x-3 justify-center md:justify-start">
                 <MapPin className="w-5 h-5 text-white/60 mt-1" />
                 <span className="text-white">Cardiff City Centre<br />Cardiff, Wales</span>
               </li>
-              <li className="flex items-start space-x-3">
+              <li className="flex items-start space-x-3 justify-center md:justify-start">
                 <Clock className="w-5 h-5 text-white/60 mt-1" />
                 <span className="text-white">Mon-Fri: 9AM-7PM<br />Sat: 9AM-5PM</span>
               </li>
