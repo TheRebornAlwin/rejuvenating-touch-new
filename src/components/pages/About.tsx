@@ -75,11 +75,11 @@ export function About() {
             </div>
             
             <div className="animate-scale-in">
-              <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
+              <div className="aspect-[4/5] lg:aspect-[4/3] relative overflow-hidden rounded-2xl elegant-shadow">
                 <img 
                   src="/assets/aboutvalheroimg.jpg" 
                   alt="Val - Your Personal Skin Specialist in her Cardiff clinic" 
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
