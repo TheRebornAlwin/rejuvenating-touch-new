@@ -319,21 +319,17 @@ export function Contact() {
           
           {/* Map Placeholder */}
           <div className="max-w-4xl mx-auto px-4 lg:px-0">
-            <div className="aspect-[16/9] bg-cream rounded-lg overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-gold/20 to-forest/20 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <MapPin className="w-12 lg:w-16 h-12 lg:h-16 text-gold mx-auto mb-3 lg:mb-4" />
-                  <h3 className="text-xl lg:text-2xl font-serif text-forest mb-2">
-                    Cardiff City Centre
-                  </h3>
-                  <p className="text-black text-base lg:text-lg mb-3 lg:mb-4">
-                    Interactive Google Map
-                  </p>
-                  <p className="text-black/70 text-sm lg:text-base">
-                    Map integration would show exact location here
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.098129771257!2d-3.1777762999999997!3d51.4930667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1d000703d4e7%3A0xed564bef46d03346!2sRejuvenating%20touch!5e0!3m2!1sen!2sus!4v1754077720670!5m2!1sen!2sus"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Rejuvenating Touch Location - Cardiff"
+              />
             </div>
             
             {/* Directions */}
