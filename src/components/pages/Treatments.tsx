@@ -118,6 +118,7 @@ export function Treatments() {
       id: '8',
       name: 'Luxury Facial + Lymphatic Drainage Facial',
       price: '£70',
+      duration: '2 hours',
       description: 'Perfect combination of our premium facial with specialized lymphatic drainage. Best of both treatments in one session.',
       benefits: [
         'Complete facial rejuvenation',
