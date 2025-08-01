@@ -360,6 +360,7 @@ export function Treatments() {
       id: '25',
       name: 'Lip Waxing',
       price: '£5',
+      duration: '25 minutes',
       description: 'Quick and gentle upper lip hair removal. Professional technique for sensitive facial skin.',
       benefits: [
         'Quick 5-minute treatment',
