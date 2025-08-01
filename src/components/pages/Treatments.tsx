@@ -304,6 +304,7 @@ export function Treatments() {
       id: '21',
       name: 'Full Leg Waxing',
       price: '£25',
+      duration: '35 minutes',
       description: 'Complete leg waxing from hip to toe. Professional technique for smooth, long-lasting results.',
       benefits: [
         'Smooth legs for weeks',
