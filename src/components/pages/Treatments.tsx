@@ -613,7 +613,7 @@ export function Treatments() {
                       <span className="text-xl lg:text-2xl font-bold">FREE</span>
                       <div className="flex items-center space-x-1">
                         <Clock className="w-4 h-4" />
-                        <span className="text-sm">45 minutes</span>
+                        <span className="text-sm">30 minutes</span>
                       </div>
                     </div>
                   </div>
