@@ -278,13 +278,12 @@ export function Contact() {
                 Get instant answers to your questions. Message anytime for 
                 quick skincare advice or booking help.
               </p>
-              <Button
+              <button 
                 onClick={handleWhatsApp}
-                href="#"
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                Message on WhatsApp
-              </Button>
+                <span>Message on WhatsApp</span>
+              </button>
             </div>
             
             {/* Instagram */}
@@ -377,18 +376,20 @@ export function Contact() {
               please contact us immediately. Your safety is our priority.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-              <button 
-                onClick={() => window.open('tel:07809259269')}
+              <Button 
+                href="tel:07809259269"
+                target="_self"
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                <span>Call Now: 07809 259269</span>
-              </button>
-              <button 
+                Call Now: 07809 259269
+              </Button>
+              <Button 
+                href="#"
+                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
                 onClick={handleWhatsApp}
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                <span>WhatsApp Support</span>
-              </button>
+                WhatsApp Support
+              </Button>
             </div>
           </div>
         </div>

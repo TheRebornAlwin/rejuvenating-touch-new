@@ -475,9 +475,9 @@ export function Home() {
             </p>
             <div className="flex justify-center pt-6 lg:pt-8 pb-6 lg:pb-8">
               <Button
-                onClick={handleBookNow}
                 href="#"
                 className="luxury-shimmer bg-cream text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
+                onClick={handleBookNow}
               >
                 Book Your Free Consultation
               </Button>

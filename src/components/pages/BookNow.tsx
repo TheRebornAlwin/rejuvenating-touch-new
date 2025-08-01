@@ -50,16 +50,16 @@ export function BookNow() {
           
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
             <Button
-              onClick={handleExternalBooking}
               href="#"
               className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+              onClick={handleBookNow}
             >
               Book Your Treatment Now
             </Button>
             <Button
-              onClick={() => window.open('https://wa.me/07809259269', '_blank')}
               href="#"
               className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+              onClick={() => window.open('https://wa.me/07809259269', '_blank')}
             >
               Ask About Services
             </Button>

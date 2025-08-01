@@ -140,12 +140,13 @@ export function Header() {
               </a>
               
               <div className="px-8 py-6">
-                <button
-                  onClick={handleBookNow}
+                <Button
+                  href="#"
                   className="w-full px-4 py-3 rounded-sm uppercase font-bold tracking-wider transition-all duration-300 hover:transform hover:scale-105 bg-white text-forest border-2 border-white"
+                  onClick={handleBookNow}
                 >
                   Book Now
-                </button>
+                </Button>
               </div>
             </nav>
           </div>

@@ -255,6 +255,10 @@ export function About() {
               className="luxury-shimmer mt-6 lg:mt-8 bg-forest text-white px-8 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
             >
               Book Your Free Consultation
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

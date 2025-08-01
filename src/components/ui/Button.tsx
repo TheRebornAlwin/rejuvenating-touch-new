@@ -56,6 +56,33 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       );
     }
 
+    if (asChild) {
+      return (
+        <span className={cn(baseClasses, variants[variant], sizes[size], className)}>
+          {children}
+        </span>
+      );
+    }
+
+    if (href) {
+      return (
+        <a
+          href={href}
+          target={target}
+          rel={rel}
+          className={cn(
+            baseClasses,
+            variants[variant],
+            sizes[size],
+            className
+          )}
+          {...(props as any)}
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
       <button
         ref={ref}
