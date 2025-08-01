@@ -346,6 +346,7 @@ export function Treatments() {
       id: '24',
       name: 'Lip, Chin & Eyebrows (Wax Combo)',
       price: '£13',
+      duration: '50 minutes',
       description: 'Complete facial waxing package. Perfect value for maintaining facial hair removal.',
       benefits: [
         'Complete facial hair removal',
