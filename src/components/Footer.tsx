@@ -34,7 +34,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-serif text-xl font-semibold mb-6 text-white">Quick Navigation</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (

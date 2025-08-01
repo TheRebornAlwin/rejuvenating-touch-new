@@ -136,8 +136,8 @@ export function Home() {
                 </h1>
                 
                 <p className="text-lg lg:text-xl text-forest leading-relaxed font-medium">
-                  Where Cardiff women discover the confidence that comes with truly personalized, 
-                  expert skin care designed exclusively for their unique beauty journey.
+                  <span className="text-center lg:text-left block">Where Cardiff women discover the confidence that comes with truly personalized, 
+                  expert skin care designed exclusively for their unique beauty journey.</span>
                 </p>
                 
                 <p className="text-base lg:text-lg text-forest leading-relaxed text-center lg:text-left">
