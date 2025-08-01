@@ -131,7 +131,7 @@ export function Treatments() {
     {
       id: '9',
       name: 'Basic Facial + Lymphatic Drainage Facial',
-      price: '£60',
+      price: '£50',
       duration: '1.5 hours',
       description: 'Essential facial care combined with puffiness-reducing lymphatic drainage. Great value combination treatment.',
       benefits: [
