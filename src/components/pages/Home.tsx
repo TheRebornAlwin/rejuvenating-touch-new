@@ -140,7 +140,7 @@ export function Home() {
                   expert skin care designed exclusively for their unique beauty journey.
                 </p>
                 
-                <p className="text-base lg:text-lg text-forest leading-relaxed">
+                <p className="text-base lg:text-lg text-forest leading-relaxed text-center lg:text-left">
                   Join 500+ women who've transformed not just their skin, but their confidence, 
                   with treatments that actually understand you.
                 </p>
@@ -320,17 +320,17 @@ export function Home() {
               <h2 className="text-3xl lg:text-5xl font-serif text-forest text-center lg:text-left">
                 Meet Val, Your Skin Specialist
               </h2>
-              <p className="text-lg lg:text-xl text-forest leading-relaxed">
+              <p className="text-lg lg:text-xl text-forest leading-relaxed text-center lg:text-left">
                 The woman behind Cardiff's most trusted aesthetic treatments. 
                 <span className="text-forest font-bold"> Over 500 transformations</span> and counting.
               </p>
-              <p className="text-base lg:text-lg text-forest leading-relaxed">
+              <p className="text-base lg:text-lg text-forest leading-relaxed text-center lg:text-left">
                 "I believe every woman deserves to feel confident in her own skin. That's why I created 
                 a space where science meets genuine care, where your story matters as much as your skin."
               </p>
               
               {/* Credentials */}
-              <div className="space-y-2 lg:space-y-3">
+              <div className="space-y-2 lg:space-y-3 text-center lg:text-left">
                 <div className="flex items-center space-x-2 lg:space-x-3">
                   <CheckCircle className="w-5 h-5 text-forest" />
                   <span className="text-sm lg:text-base text-forest font-medium">10+ Years Clinical Experience</span>
@@ -345,18 +345,20 @@ export function Home() {
                 </div>
               </div>
               
-              <p className="text-base lg:text-lg text-forest">
+              <p className="text-base lg:text-lg text-forest text-center lg:text-left">
                 <span className="text-forest font-bold">Your free consultation</span> includes comprehensive skin analysis, 
                 personalized treatment planning, and the beginning of your transformation journey.
               </p>
               
-              <Link 
-                to="/about" 
-                className="inline-flex items-center text-forest font-semibold text-base lg:text-lg hover:text-gold transition-colors group"
-              >
-                Discover Val's Story
-                <ArrowRight className="w-5 lg:w-6 h-5 lg:h-6 ml-2 lg:ml-3 group-hover:translate-x-2 transition-transform" />
-              </Link>
+              <div className="text-center lg:text-left">
+                <Link 
+                  to="/about" 
+                  className="inline-flex items-center text-forest font-semibold text-base lg:text-lg hover:text-gold transition-colors group"
+                >
+                  Discover Val's Story
+                  <ArrowRight className="w-5 lg:w-6 h-5 lg:h-6 ml-2 lg:ml-3 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

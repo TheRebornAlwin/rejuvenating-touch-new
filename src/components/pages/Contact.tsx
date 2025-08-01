@@ -72,7 +72,7 @@ export function Contact() {
           <h1 className="text-3xl lg:text-6xl font-serif text-forest mb-4 lg:mb-6 text-center">
             Get In Touch
           </h1>
-          <p className="text-lg lg:text-xl text-forest leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-forest leading-relaxed max-w-2xl mx-auto text-center lg:text-left">
             <span className="text-forest">
               We'd love to hear from you. Whether you have questions about treatments, 
               need skincare advice, or want to book a consultation, we're here to help.
@@ -93,7 +93,7 @@ export function Contact() {
                 <h2 className="text-2xl lg:text-4xl font-serif text-forest mb-4 text-center lg:text-left">
                   Send Us a Message
                 </h2>
-                <p className="text-base lg:text-lg text-black">
+                <p className="text-base lg:text-lg text-black text-center lg:text-left">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
               </div>
@@ -183,7 +183,7 @@ export function Contact() {
                 <h2 className="text-2xl lg:text-4xl font-serif text-forest mb-4 text-center lg:text-left">
                   Contact Information
                 </h2>
-                <p className="text-base lg:text-lg text-black">
+                <p className="text-base lg:text-lg text-black text-center lg:text-left">
                   Prefer to contact us directly? Here are all the ways to reach us.
                 </p>
               </div>

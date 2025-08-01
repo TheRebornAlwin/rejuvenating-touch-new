@@ -17,7 +17,7 @@ export function Footer() {
       <div className="container-custom py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Tagline */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center md:text-left">
             <div className="flex items-center space-x-4">
               <div className="w-14 h-14 rounded-full overflow-hidden soft-glow">
                 <img 
@@ -35,8 +35,8 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-xl font-semibold mb-6 text-white">Quick Navigation</h4>
-            <ul className="space-y-3">
+            <h4 className="font-serif text-xl font-semibold mb-6 text-white text-center md:text-left">Quick Navigation</h4>
+            <ul className="space-y-3 text-center md:text-left">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link 
@@ -52,8 +52,8 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-xl font-semibold mb-6 text-white">Contact Information</h4>
-            <ul className="space-y-4">
+            <h4 className="font-serif text-xl font-semibold mb-6 text-white text-center md:text-left">Contact Information</h4>
+            <ul className="space-y-4 text-center md:text-left">
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-white/60" />
                 <span className="text-white">07809 259269</span>
@@ -80,8 +80,8 @@ export function Footer() {
 
           {/* Social & Visual */}
           <div>
-            <h4 className="font-serif text-xl font-semibold mb-6 text-white">Connect With Us</h4>
-            <div className="flex space-x-4 mb-8">
+            <h4 className="font-serif text-xl font-semibold mb-6 text-white text-center md:text-left">Connect With Us</h4>
+            <div className="flex space-x-4 mb-8 justify-center md:justify-start">
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
@@ -97,10 +97,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-16 pt-10 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-          <p className="text-white/70">
+          <p className="text-white/70 text-center md:text-left">
             © 2025 Rejuvenating Touch. All rights reserved.
           </p>
-          <div className="flex space-x-8">
+          <div className="flex space-x-8 text-center md:text-left">
             <Link to="/privacy" className="text-white/80 hover:text-white transition-colors">
               Privacy Policy
             </Link>
