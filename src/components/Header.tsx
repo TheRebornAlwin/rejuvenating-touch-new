@@ -6,16 +6,32 @@ import { Button } from './ui/Button';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
       setIsScrolled(window.scrollY > 20);
+      
+      // Show header when at top of page
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and past 100px
+        setIsVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const navItems = [
     { name: 'About Val', path: '/about' },
@@ -30,7 +46,9 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-forest premium-shadow">
+    <header className={`fixed top-0 w-full z-50 bg-forest premium-shadow transition-transform duration-300 ease-in-out ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
