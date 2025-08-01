@@ -23,7 +23,8 @@ export function Treatments() {
         'Gentle exfoliation for smoother texture',
         'Hydrating mask for instant glow',
       ],
-      image: '/assets/basicccfacialllll.jpg',
+      image: '/assets/basicfacaiaallll.jpg',
+      category: 'facials'
     },
     {
       id: '2',
@@ -150,7 +151,7 @@ export function Treatments() {
         'Stress relief and skin benefits',
         'Great value combination',
       ],
-      image: '/assets/basicfacialbackmassage.jpg',
+      image: '/assets/basicfacialbbbackmassage.jpg',
       category: 'combinations'
     },
     {
