@@ -282,10 +282,24 @@ export function Treatments() {
       image: '/assets/footmassage.jpg',
       category: 'massages'
     },
+    {
+      id: '20',
+      name: 'Buccal Massage',
+      price: '£40',
+      duration: '30 minutes',
+      description: 'Specialized facial massage technique that includes double cleanse, massage, moisturizer and SPF. Targets facial muscles from inside the mouth for lifting and toning effects.',
+      benefits: [
+        'Natural facial lifting and toning',
+        'Improves facial muscle tone',
+        'Complete skincare routine included',
+      ],
+      image: '/assets/buccalmassage.jpg',
+      category: 'massages'
+    },
 
     // Waxing
     {
-      id: '20',
+      id: '21',
       name: 'Full Leg Waxing',
       price: '£25',
       description: 'Complete leg waxing from hip to toe. Professional technique for smooth, long-lasting results.',
@@ -298,7 +312,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '21',
+      id: '22',
       name: 'Half Leg Waxing',
       price: '£18',
       description: 'Lower leg waxing from knee to ankle. Perfect for maintaining smooth legs with regular treatments.',
@@ -311,7 +325,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '22',
+      id: '23',
       name: 'Underarm Waxing',
       price: '£15',
       description: 'Quick and comfortable underarm waxing. Leaves skin smooth and hair-free for weeks.',
@@ -324,7 +338,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '23',
+      id: '24',
       name: 'Lip, Chin & Eyebrows (Wax Combo)',
       price: '£13',
       description: 'Complete facial waxing package. Perfect value for maintaining facial hair removal.',
@@ -337,7 +351,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '24',
+      id: '25',
       name: 'Lip Waxing',
       price: '£5',
       description: 'Quick and gentle upper lip hair removal. Professional technique for sensitive facial skin.',
@@ -350,7 +364,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '25',
+      id: '26',
       name: 'Chin Waxing',
       price: '£5',
       description: 'Professional chin hair removal. Quick, comfortable, and precise.',
@@ -363,7 +377,7 @@ export function Treatments() {
       category: 'waxing'
     },
     {
-      id: '26',
+      id: '27',
       name: 'Eyebrows Waxing',
       price: '£5',
       description: 'Expert eyebrow shaping and hair removal. Creates perfectly defined brows.',
@@ -378,7 +392,7 @@ export function Treatments() {
 
     // Beauty
     {
-      id: '27',
+      id: '28',
       name: 'Classic Eyelashes',
       price: '£25',
       description: 'Beautiful classic eyelash treatment for natural-looking enhancement. Perfect for everyday elegance.',
@@ -393,7 +407,7 @@ export function Treatments() {
 
     // Add-ons
     {
-      id: '28',
+      id: '29',
       name: 'Chest, Face & Scalp Add-on',
       price: '£15',
       description: 'Enhancement add-on for any massage treatment. Extends your relaxation experience.',
@@ -406,7 +420,7 @@ export function Treatments() {
       category: 'add-ons'
     },
     {
-      id: '29',
+      id: '30',
       name: 'Candle Wax Oil Add-on',
       price: '£10',
       description: 'Luxurious warm candle wax oil treatment. Adds aromatherapy and deep moisturizing to any service.',
@@ -419,7 +433,7 @@ export function Treatments() {
       category: 'add-ons'
     },
     {
-      id: '30',
+      id: '31',
       name: 'Body Brushing Add-on',
       price: '£5',
       description: 'Dry body brushing to stimulate circulation and exfoliate skin. Perfect preparation for treatments.',
@@ -432,7 +446,7 @@ export function Treatments() {
       category: 'add-ons'
     },
     {
-      id: '31',
+      id: '32',
       name: 'Cold Stone Mask Add-on',
       price: '£2',
       description: 'Cooling stone mask treatment for puffy eyes and stressed skin. Perfect finishing touch.',
@@ -445,7 +459,7 @@ export function Treatments() {
       category: 'add-ons'
     },
     {
-      id: '32',
+      id: '33',
       name: 'Cold Globes',
       price: '£2',
       description: 'Cooling facial globes treatment to reduce puffiness and soothe skin. Perfect finishing touch for any facial treatment.',
@@ -458,7 +472,7 @@ export function Treatments() {
       category: 'add-ons'
     },
     {
-      id: '33',
+      id: '34',
       name: 'Jelly Mask',
       price: '£7',
       description: 'Hydrating jelly mask treatment that provides intense moisture and cooling relief. Leaves skin plump and refreshed.',
