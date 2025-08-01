@@ -332,6 +332,7 @@ export function Treatments() {
       id: '23',
       name: 'Underarm Waxing',
       price: '£15',
+      duration: '30 minutes',
       description: 'Quick and comfortable underarm waxing. Leaves skin smooth and hair-free for weeks.',
       benefits: [
         'Quick 15-minute treatment',
