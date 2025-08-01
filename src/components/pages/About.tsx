@@ -58,8 +58,8 @@ export function About() {
               <div className="space-y-4 lg:space-y-6">
                 <span className="text-forest uppercase tracking-wider font-semibold text-sm lg:text-base mb-4 lg:mb-6 block">Meet Your Aesthetician</span>
                 
-                <h1 className="text-3xl lg:text-7xl font-serif text-forest leading-tight">
-                  <span className="text-center lg:text-left block">Val – Your Personal</span>
+                <h1 className="text-3xl lg:text-7xl font-serif text-forest leading-tight text-center lg:text-left">
+                  <span className="block">Val – Your Personal</span>
                   <span className="block text-forest">Skin Specialist</span>
                 </h1>
                 
