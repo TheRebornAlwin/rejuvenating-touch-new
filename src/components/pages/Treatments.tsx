@@ -388,6 +388,7 @@ export function Treatments() {
       id: '27',
       name: 'Eyebrows Waxing',
       price: '£5',
+      duration: '15 minutes',
       description: 'Expert eyebrow shaping and hair removal. Creates perfectly defined brows.',
       benefits: [
         'Expert brow shaping',
