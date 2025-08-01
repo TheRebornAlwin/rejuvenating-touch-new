@@ -434,6 +434,7 @@ export function Treatments() {
       id: '30',
       name: 'Candle Wax Oil Add-on',
       price: '£10',
+      duration: '30 minutes',
       description: 'Luxurious warm candle wax oil treatment. Adds aromatherapy and deep moisturizing to any service.',
       benefits: [
         'Deep moisturizing treatment',
