@@ -516,7 +516,7 @@ export function Treatments() {
   };
 
   return (
-    <div className="min-h-screen pt-24 page-transition-enter page-transition-enter-active">
+    <div className="min-h-screen pt-24 spacious-luxury-gradient page-transition-enter page-transition-enter-active">
       {/* Hero Section */}
       <section className="py-12 lg:py-32 spacious-luxury-gradient">
         <div className="container-custom text-center">

@@ -64,7 +64,7 @@ export function Contact() {
   };
 
   return (
-    <div className="min-h-screen pt-20 page-transition-enter page-transition-enter-active">
+    <div className="min-h-screen pt-20 bg-cream page-transition-enter page-transition-enter-active">
       {/* Hero Section */}
       <section className="py-12 lg:py-20 bg-cream">
         <div className="container-custom text-center">
