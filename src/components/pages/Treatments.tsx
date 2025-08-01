@@ -44,7 +44,7 @@ export function Treatments() {
       id: '3',
       name: 'Lymphatic Drainage Facial',
       price: '£30',
-      duration: '30 minutes',
+      duration: '1 hour',
       description: 'Specialized massage technique to reduce puffiness and promote natural detoxification. Perfect for reducing under-eye bags and facial swelling.',
       benefits: [
         'Reduces facial puffiness and swelling',
