@@ -404,6 +404,7 @@ export function Treatments() {
       id: '28',
       name: 'Classic Eyelashes',
       price: '£25',
+      duration: '2 hours',
       description: 'Beautiful classic eyelash treatment for natural-looking enhancement. Perfect for everyday elegance.',
       benefits: [
         'Natural-looking enhancement',
