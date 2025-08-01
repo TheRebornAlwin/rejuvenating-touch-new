@@ -67,7 +67,7 @@ export function About() {
                   Dedicated to transforming skin through science, genuine care,
                   and completely personalized expertise.
                 </p>
-                <p className="text-forest text-sm lg:text-lg leading-relaxed font-medium tracking-wide mt-4 lg:mt-6 text-center lg:text-left">
+                <p className="text-forest text-sm lg:text-base leading-relaxed font-medium tracking-wide mt-4 lg:mt-6 text-center lg:text-left">
                   Experience the difference that comes from working with someone who truly 
                   understands your skin and is committed to your transformation journey.
                 </p>
