@@ -376,24 +376,29 @@ export function Contact() {
               please contact us immediately. Your safety is our priority.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-              <Button 
-                href="tel:07809259269"
-                target="_self"
+            <Button
+                onClick={() => window.open('tel:07809259269')}
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+              href="tel:07809259269"
+              target="_self"
               >
-                Call Now: 07809 259269
-              </Button>
-              <Button 
-                href="#"
+                <span>Call Now: 07809 259269</span>
+              Call Now: 07809 259269
+            </Button>
+            <Button
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
-                onClick={handleWhatsApp}
+              href="#"
               >
-                WhatsApp Support
-              </Button>
-            </div>
+                <span>WhatsApp Support</span>
+              Message on WhatsApp
+            </Button>
           </div>
         </div>
       </section>
     </div>
   );
+}
+  )
+}
+  )
 }
