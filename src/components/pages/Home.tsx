@@ -236,7 +236,6 @@ export function Home() {
                 
                 {/* Caption and Sessions */}
                 <div className="p-4 lg:p-6 text-center">
-                  {/* Content removed as requested */}
                 </div>
               </div>
             ))}
@@ -308,11 +307,11 @@ export function Home() {
             {/* Left - Val's Images */}
             <div className="animate-scale-in">
               {/* Val's Portrait */}
-              <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
+              <div className="aspect-[4/5] lg:aspect-[2/3] relative overflow-hidden rounded-2xl elegant-shadow">
                 <img 
                   src="/assets/aboutvalheroimg.jpg" 
                   alt="Val - Your Personal Skin Specialist in her Cardiff clinic" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-bottom"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
