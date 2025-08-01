@@ -424,12 +424,7 @@ export function Home() {
                 <div className="pt-6 lg:pt-8">
                   <div className="flex items-center space-x-1 mb-4 lg:mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 lg:w-6 h-5 lg:h-6 text-gold fill-gold" />
-                    ))}
-                  </div>
-                      <p className="text-base lg:text-lg text-white mb-4 lg:mb-6 italic leading-relaxed font-medium">
-                    "{testimonial.text}"
-                  </p>
+                  {/* Content removed as requested */}
                   <div>
                         <p className="font-serif font-bold text-gold text-base lg:text-lg">
                       {testimonial.name}
