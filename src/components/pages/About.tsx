@@ -172,7 +172,7 @@ export function About() {
               Credentials & Safety Protocol
             </h2>
             <p className="text-lg lg:text-2xl text-olive max-w-3xl mx-auto">
-              Your safety, comfort, and exceptional results are my absolute top priorities
+             
             </p>
             <p className="text-forest text-sm lg:text-base max-w-3xl mx-auto mt-2">
               Your safety, comfort, and exceptional results are my absolute top priorities
