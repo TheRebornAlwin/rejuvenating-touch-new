@@ -21,7 +21,7 @@ export function Footer() {
             <div className="flex items-center space-x-4">
               <div className="w-14 h-14 rounded-full overflow-hidden soft-glow">
                 <img 
-                  src="/assets/logo.jpg" 
+                  src="/assets/logooo.jpg" 
                   alt="Rejuvenating Touch Logo" 
                   className="w-full h-full object-cover"
                 />

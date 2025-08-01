@@ -160,7 +160,7 @@ export function Home() {
             {/* Right - Hero Visual */}
             <div className="relative animate-scale-in">
               {/* Treatment Space Image Placeholder */}
-              <div className="aspect-[4/5] lg:aspect-[3/2] relative overflow-hidden rounded-2xl elegant-shadow">
+              <div className="aspect-[3/4] lg:aspect-[4/3] relative overflow-hidden rounded-2xl elegant-shadow">
                 <img 
                   src="/assets/herosectionimage.jpg" 
                   alt="Val's Premium Treatment Space - Serene, private clinic environment" 
@@ -236,12 +236,7 @@ export function Home() {
                 
                 {/* Caption and Sessions */}
                 <div className="p-4 lg:p-6 text-center">
-                  <h3 className="font-serif text-base lg:text-lg font-semibold text-forest mb-2">
-                    {result.caption}
-                  </h3>
-                  <p className="text-forest/70 text-sm">
-                    {result.sessions}
-                  </p>
+                  {/* Content removed as requested */}
                 </div>
               </div>
             ))}
@@ -264,7 +259,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left - Client Image Placeholder */}
             <div className="space-y-4 lg:space-y-6 animate-scale-in">
-              <div className="aspect-[4/5] lg:aspect-[3/2] premium-card rounded-xl flex items-center justify-center border border-gold/20">
+              <div className="aspect-[3/4] lg:aspect-[4/3] premium-card rounded-xl flex items-center justify-center border border-gold/20">
                 <img 
                   src="/assets/whycardiffwomenchooseus.jpg" 
                   alt="Cardiff women who choose our aesthetic treatments" 
@@ -317,7 +312,7 @@ export function Home() {
                 <img 
                   src="/assets/aboutvalheroimg.jpg" 
                   alt="Val - Your Personal Skin Specialist in her Cardiff clinic" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest/20 via-transparent to-transparent"></div>
               </div>
@@ -439,9 +434,6 @@ export function Home() {
                         <p className="font-serif font-bold text-gold text-base lg:text-lg">
                       {testimonial.name}
                     </p>
-                        <p className="text-white/70 text-xs lg:text-sm">
-                      {testimonial.treatment}
-                    </p>
                   </div>
                 </div>
                   </div>
@@ -462,7 +454,6 @@ export function Home() {
                 <p className="text-xs lg:text-sm text-white mb-4 italic">"{testimonial.text}"</p>
                 <div className="text-xs">
                   <p className="font-semibold text-gold">{testimonial.name}</p>
-                  <p className="text-white/70">{testimonial.treatment}</p>
                 </div>
               </div>
             ))}
