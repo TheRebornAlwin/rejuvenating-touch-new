@@ -24,7 +24,6 @@ export function Treatments() {
         'Hydrating mask for instant glow',
       ],
       image: '/assets/basicccfacialllll.jpg',
-      category: 'facials'
     },
     {
       id: '2',
@@ -37,7 +36,7 @@ export function Treatments() {
         'Premium skincare products',
         'Relaxing facial massage included',
       ],
-      image: '/assets/luxuryfaciallllll.jpg',
+      image: '/assets/luxuryyyfacial.jpg',
       category: 'facials'
     },
     {
@@ -137,7 +136,7 @@ export function Treatments() {
         'Gentle yet effective treatment',
         'Perfect introduction to our services',
       ],
-      image: '/assets/basicfaciallymphaticdrainage.webp',
+      image: '/assets/basicfaciallymphaticdrainageeee.webp',
       category: 'combinations'
     },
     {
@@ -223,7 +222,7 @@ export function Treatments() {
         'Customized oil blends',
         'Mental and physical wellness',
       ],
-      image: '/assets/aromaaatherapyfullbodymassage.jpg',
+      image: '/assets/pppreblendedaromatherapyfullbody.jpg',
       category: 'massages'
     },
     {
@@ -597,7 +596,7 @@ export function Treatments() {
               {/* Consultation Image Placeholder */}
               <div className="aspect-[4/3] border-b border-gold/20">
                 <img 
-                  src="/assets/Skin-Consultation.jpg" 
+                  src="/assets/freeskinconsultation.jpg" 
                   alt="Free First Time Skin Consultation"
                   className="w-full h-full object-cover"
                 />
