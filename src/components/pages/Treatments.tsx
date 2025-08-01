@@ -374,6 +374,7 @@ export function Treatments() {
       id: '26',
       name: 'Chin Waxing',
       price: '£5',
+      duration: '10 minutes',
       description: 'Professional chin hair removal. Quick, comfortable, and precise.',
       benefits: [
         'Professional precision',
