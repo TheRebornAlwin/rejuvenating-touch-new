@@ -237,11 +237,6 @@ export function Home() {
                 {/* Caption and Sessions */}
                 <div className="p-4 lg:p-6 text-center">
                   {/* Content removed as requested */}
-                </div>
-              </div>
-            ))}
-          </div>
-          
           <div className="text-center">
             <Link 
               to="/results" 
