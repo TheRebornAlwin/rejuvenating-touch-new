@@ -760,18 +760,20 @@ export function Treatments() {
             Every service includes a consultation to ensure the perfect fit for your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-            <button 
+            <Button
               onClick={handleBookNow}
+              href="#"
               className="luxury-shimmer bg-cream text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
             >
-              <span>Book Your Treatment Now</span>
-            </button>
-            <button 
+              Book Your Treatment Now
+            </Button>
+            <Button
               onClick={() => window.open('https://wa.me/07809259269', '_blank')}
+              href="#"
               className="luxury-shimmer bg-cream text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
             >
-              <span>Ask About Services</span>
-            </button>
+              Ask About Services
+            </Button>
           </div>
           </div>
         </div>

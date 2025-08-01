@@ -147,12 +147,13 @@ export function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
-                <button 
+                <Button
                   onClick={handleBookNow}
+                  href="#"
                   className="luxury-shimmer bg-forest text-white px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                 >
-                  <span>Book Your Free Consultation</span>
-                </button>
+                  Book Your Free Consultation
+                </Button>
               </div>
               
             </div>
@@ -473,12 +474,13 @@ export function Home() {
               expert skin care can do for their confidence.
             </p>
             <div className="flex justify-center pt-6 lg:pt-8 pb-6 lg:pb-8">
-              <button 
+              <Button
                 onClick={handleBookNow}
+                href="#"
                 className="luxury-shimmer bg-cream text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
               >
-                <span>Book Your Free Consultation</span>
-              </button>
+                Book Your Free Consultation
+              </Button>
             </div>
           </div>
         </div>

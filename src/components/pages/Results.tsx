@@ -245,18 +245,20 @@ export function Results() {
             Let's create your personalized treatment plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-            <button 
+            <Button
               onClick={handleBookNow}
+              href="#"
               className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white"
             >
-              <span>Book Your Free Consultation</span>
-            </button>
-            <button 
+              Book Your Free Consultation
+            </Button>
+            <Button
               onClick={() => window.open('https://wa.me/07809259269', '_blank')}
+              href="#"
               className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white border-2 border-forest"
             >
-              <span>Ask About Results</span>
-            </button>
+              Ask About Results
+            </Button>
           </div>
           </div>
         </div>

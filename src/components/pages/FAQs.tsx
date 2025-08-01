@@ -218,18 +218,21 @@ export function FAQs() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-              <button 
+              <Button
                 onClick={handleContactUs}
+                href="#"
                 className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                <span>Message Us on WhatsApp</span>
-              </button>
-              <button
+                Message Us on WhatsApp
+              </Button>
+              <Button
                 onClick={() => window.open('mailto:rejuvenatingtouchacbpm@gmail.com')}
+                href="mailto:rejuvenatingtouchacbpm@gmail.com"
+                target="_self"
                 className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                <span>Send Us an Email</span>
-              </button>
+                Send Us an Email
+              </Button>
             </div>
             
             <div className="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-gold/20">

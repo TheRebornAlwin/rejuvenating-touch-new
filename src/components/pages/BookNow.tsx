@@ -49,18 +49,20 @@ export function BookNow() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-            <button 
-              onClick={() => window.open('tel:07809259269')}
-              className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-forest text-white border-2 border-forest"
+            <Button
+              onClick={handleExternalBooking}
+              href="#"
+              className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
             >
-              <span>Call Now: 07809 259269</span>
-            </button>
-            <button 
-              onClick={handleWhatsApp}
-              className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-forest text-white border-2 border-forest"
+              Book Your Treatment Now
+            </Button>
+            <Button
+              onClick={() => window.open('https://wa.me/07809259269', '_blank')}
+              href="#"
+              className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
             >
-              <span>Message on WhatsApp</span>
-            </button>
+              Ask About Services
+            </Button>
           </div>
           </div>
         </div>
@@ -90,13 +92,12 @@ export function BookNow() {
                 You'll be able to view real-time availability, select your preferred 
                 treatment, and book instantly.
               </p>
-              <Button onClick={handleExternalBooking} size="lg" variant="cta" luxury={true}>
-              <button 
+              <Button
                 onClick={handleExternalBooking}
+                href="#"
                 className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white"
               >
-                <span>Book Now</span>
-              </button>
+                Book Now
               </Button>
             </div>
           </div>
@@ -130,12 +131,13 @@ export function BookNow() {
                     </div>
                   </div>
                 </div>
-                <button 
+                <Button
                   onClick={handleExternalBooking}
+                  href="#"
                   className="luxury-shimmer w-full px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-forest text-white"
                 >
-                  <span>Book Your Free Consultation</span>
-                </button>
+                  Book Your Free Consultation
+                </Button>
               </div>
             ))}
           </div>

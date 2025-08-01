@@ -278,12 +278,13 @@ export function Contact() {
                 Get instant answers to your questions. Message anytime for 
                 quick skincare advice or booking help.
               </p>
-              <button 
+              <Button
                 onClick={handleWhatsApp}
+                href="#"
                 className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
               >
-                <span>Message on WhatsApp</span>
-              </button>
+                Message on WhatsApp
+              </Button>
             </div>
             
             {/* Instagram */}

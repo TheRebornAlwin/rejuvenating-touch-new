@@ -63,11 +63,11 @@ export function About() {
                   <span className="block text-forest">Skin Specialist</span>
                 </h1>
                 
-                <p className="text-base lg:text-xl text-forest leading-relaxed">
+                <p className="text-base lg:text-xl text-forest leading-relaxed text-center lg:text-left">
                   Dedicated to transforming skin through science, genuine care,
                   and completely personalized expertise.
                 </p>
-                <p className="text-forest text-sm lg:text-lg leading-relaxed font-medium tracking-wide mt-4 lg:mt-6">
+                <p className="text-forest text-sm lg:text-lg leading-relaxed font-medium tracking-wide mt-4 lg:mt-6 text-center lg:text-left">
                   Experience the difference that comes from working with someone who truly 
                   understands your skin and is committed to your transformation journey.
                 </p>
@@ -249,15 +249,12 @@ export function About() {
               Your skin transformation journey begins with understanding, continues with expertise, 
               and results in the confidence that comes with truly healthy, radiant skin.
             </p>
-            <button 
+            <Button
               onClick={handleBookNow}
+              href="#"
               className="luxury-shimmer mt-6 lg:mt-8 bg-forest text-white px-8 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
             >
-              <span>Book Your Free Consultation</span>
-            </button>
-          </div>
-        </div>
-      </section>
+              Book Your Free Consultation
     </div>
   );
 }

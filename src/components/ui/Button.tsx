@@ -7,10 +7,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   luxury?: boolean;
   children: React.ReactNode;
   asChild?: boolean;
+  href?: string;
+  target?: string;
+  rel?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant = 'primary', size = 'default', luxury = false, className, children, asChild, ...props }, ref) => {
+  ({ variant = 'primary', size = 'default', luxury = false, className, children, asChild, href, target = '_blank', rel = 'noopener noreferrer', ...props }, ref) => {
     const baseClasses = `inline-flex items-center justify-center font-bold uppercase tracking-wider transition-all duration-700 hover:transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded-sm ${luxury ? 'relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000' : ''}`;
     
     const variants = {
@@ -31,6 +34,25 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         <span className={cn(baseClasses, variants[variant], sizes[size], className)}>
           {children}
         </span>
+      );
+    }
+
+    if (href) {
+      return (
+        <a
+          href={href}
+          target={target}
+          rel={rel}
+          className={cn(
+            baseClasses,
+            variants[variant],
+            sizes[size],
+            className
+          )}
+          {...(props as any)}
+        >
+          {children}
+        </a>
       );
     }
 
