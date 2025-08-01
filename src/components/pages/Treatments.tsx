@@ -420,6 +420,7 @@ export function Treatments() {
       id: '29',
       name: 'Chest, Face & Scalp Add-on',
       price: '£15',
+      duration: '30 minutes',
       description: 'Enhancement add-on for any massage treatment. Extends your relaxation experience.',
       benefits: [
         'Extends massage benefits',
