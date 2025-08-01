@@ -235,7 +235,7 @@ export function FAQs() {
             <div className="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-gold/20">
               <p className="text-white/70 text-sm lg:text-base">
                 📞 Phone: 07809 259269<br />
-                📧 Email: rejuvenatingtouchacbpm@gmail.com<br />
+                📧 Email: <a href="mailto:rejuvenatingtouchacbpm@gmail.com" className="hover:text-gold transition-colors duration-300">rejuvenatingtouchacbpm@gmail.com</a><br />
                 📍 Location: Cardiff City Centre, Wales
               </p>
             </div>

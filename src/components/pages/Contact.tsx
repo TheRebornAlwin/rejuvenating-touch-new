@@ -171,7 +171,7 @@ export function Contact() {
                 {submitStatus === 'error' && (
                   <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
                     <p className="font-semibold">Error sending message</p>
-                    <p className="text-sm">Please try again or contact us directly at rejuvenatingtouchacbpm@gmail.com</p>
+                    <p className="text-sm">Please try again or contact us directly at <a href="mailto:rejuvenatingtouchacbpm@gmail.com" className="hover:text-gold transition-colors duration-300">rejuvenatingtouchacbpm@gmail.com</a></p>
                   </div>
                 )}
               </form>
@@ -204,7 +204,12 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-forest mt-1" />
                   <div>
                     <h3 className="font-semibold text-forest mb-1 text-base lg:text-lg">Email</h3>
-                    <p className="text-black text-base lg:text-lg break-all">rejuvenatingtouchacbpm@gmail.com</p>
+                    <a 
+                      href="mailto:rejuvenatingtouchacbpm@gmail.com"
+                      className="text-black text-base lg:text-lg break-all hover:text-gold transition-colors duration-300"
+                    >
+                      rejuvenatingtouchacbpm@gmail.com
+                    </a>
                     <p className="text-sm text-black/70">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -334,7 +339,7 @@ export function Contact() {
             
             {/* Directions */}
             <div className="mt-6 lg:mt-8 bg-cream p-4 lg:p-6 rounded-lg">
-              <h3 className="font-serif text-lg lg:text-xl font-semibold text-forest mb-3 lg:mb-4">
+              <h3 className="font-serif text-lg lg:text-xl font-semibold text-forest mb-3 lg:mb-4 text-center">
                 Getting Here
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">

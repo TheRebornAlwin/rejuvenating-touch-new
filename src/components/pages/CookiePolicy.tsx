@@ -98,7 +98,7 @@ export function CookiePolicy() {
               </p>
               <div className="mt-4 p-4 soft-creme-gradient rounded-lg">
                 <p className="font-semibold">Rejuvenating Touch</p>
-                <p>Email: rejuvenatingtouchacbpm@gmail.com</p>
+                <p>Email: <a href="mailto:rejuvenatingtouchacbpm@gmail.com" className="hover:text-gold transition-colors duration-300">rejuvenatingtouchacbpm@gmail.com</a></p>
                 <p>Phone: 07809 259269</p>
                 <p>Address: Cardiff City Centre, Cardiff, Wales</p>
               </div>
