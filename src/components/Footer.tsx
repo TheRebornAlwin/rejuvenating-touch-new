@@ -58,9 +58,14 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-white/60" />
                 <span className="text-white">07809 259269</span>
               </li>
-              <li className="flex items-center space-x-3">
+              <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-white/60" />
-                <span className="text-white">rejuvenatingtouchacbpm@gmail.com</span>
+                <a 
+                  href="mailto:rejuvenatingtouchacbpm@gmail.com"
+                  className="text-white hover:text-gold transition-colors duration-300 break-all"
+                >
+                  rejuvenatingtouchacbpm@gmail.com
+                </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-white/60 mt-1" />
