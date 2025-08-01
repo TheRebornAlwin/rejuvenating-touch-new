@@ -448,6 +448,7 @@ export function Treatments() {
       id: '31',
       name: 'Body Brushing Add-on',
       price: '£5',
+      duration: '30 minutes',
       description: 'Dry body brushing to stimulate circulation and exfoliate skin. Perfect preparation for treatments.',
       benefits: [
         'Stimulates circulation',
