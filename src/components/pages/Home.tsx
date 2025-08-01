@@ -235,8 +235,6 @@ export function Home() {
                 </div>
                 
                 {/* Caption and Sessions */}
-                <div className="p-4 lg:p-6 text-center">
-                </div>
               </div>
             ))}
           </div>
