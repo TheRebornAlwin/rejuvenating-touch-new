@@ -56,7 +56,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div className="space-y-6 lg:space-y-8 animate-slide-in-left px-4 lg:px-0">
               <div className="space-y-4 lg:space-y-6">
-                <span className="text-forest uppercase tracking-wider font-semibold text-sm lg:text-base mb-4 lg:mb-6 block">Meet Your Aesthetician</span>
+                <span className="text-forest uppercase tracking-wider font-semibold text-sm lg:text-base mb-4 lg:mb-6 block text-center lg:text-left">Meet Your Aesthetician</span>
                 
                 <h1 className="text-3xl lg:text-7xl font-serif text-forest leading-tight text-center lg:text-left">
                   <span className="block">Val – Your Personal</span>
