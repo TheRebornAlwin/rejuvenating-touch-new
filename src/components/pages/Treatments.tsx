@@ -736,7 +736,6 @@ export function Treatments() {
                   
                   <button 
                     onClick={handleBookNow}
-                    className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                   >
                     Book Now
                   </button>
@@ -779,3 +778,5 @@ export function Treatments() {
     </div>
   );
 }
+                  <button 
+                    onClick={() => window.open(treatment.freshaLink, '_blank')}
