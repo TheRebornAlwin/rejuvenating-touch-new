@@ -735,13 +735,11 @@ export function Treatments() {
                   </div>
                   
                   <button 
-                  <Button
-                    href="#"
-                    className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                     onClick={handleBookNow}
+                    className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                   >
                     Book Now
-                  </Button>
+                  </button>
                 </div>
               </div>
             ))}
@@ -762,20 +760,18 @@ export function Treatments() {
             Every service includes a consultation to ensure the perfect fit for your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-            <Button
-              href="#"
+            <button
               className="luxury-shimmer bg-cream text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
               onClick={handleBookNow}
             >
               Book Your Treatment Now
-            </Button>
-            <Button
-              href="#"
+            </button>
+            <button
               className="luxury-shimmer bg-cream text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
               onClick={() => window.open('https://wa.me/07809259269', '_blank')}
             >
               Ask About Services
-            </Button>
+            </button>
           </div>
           </div>
         </div>
