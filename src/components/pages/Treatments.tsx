@@ -778,5 +778,3 @@ export function Treatments() {
     </div>
   );
 }
-                  <button 
-                    onClick={() => window.open(treatment.freshaLink, '_blank')}
