@@ -419,7 +419,7 @@ export function Treatments() {
         'Deep muscle penetration with heat therapy',
         'Enhanced circulation throughout entire body',
       ],
-      image: '',
+      image: 'assets/hotstonefullbodychestfacescalp.jpg',
       category: 'massages',
       freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566684'
     },
