@@ -193,7 +193,7 @@ export function Treatments() {
       ],
       image: '/assets/basicfaciallymphaticdrainageeee.webp',
       category: 'combinations',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566687'
     },
     {
       id: '10',
