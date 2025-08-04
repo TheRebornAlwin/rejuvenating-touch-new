@@ -528,7 +528,7 @@ export function Treatments() {
       ],
       image: '/assets/lipwaxing.jpg',
       category: 'waxing',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17805566'
     },
     {
       id: '26',
