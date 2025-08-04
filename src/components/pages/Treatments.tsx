@@ -238,7 +238,7 @@ export function Treatments() {
       ],
       image: '/assets/backfacialbackmassage.jpg',
       category: 'combinations',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A20244954'
     },
     {
       id: '35',
