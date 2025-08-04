@@ -331,7 +331,7 @@ export function Treatments() {
       ],
       image: '/assets/preblendedaromatherapybackonlymassage.jpg',
       category: 'massages',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17676353'
     },
     {
       id: '17',
