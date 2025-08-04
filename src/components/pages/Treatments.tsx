@@ -904,9 +904,9 @@ export function Treatments() {
                   </div>
                   
                   <button 
-                    onClick={handleBookNow}
-                  >
-                    Book Now
+                    onClick={() => window.open(treatment.freshaLink || 'https://fresha.com', '_blank')}
+                    className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
+                    <span>Book Now</span>
                   </button>
                 </div>
               </div>
