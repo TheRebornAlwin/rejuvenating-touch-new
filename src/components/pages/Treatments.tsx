@@ -55,7 +55,7 @@ export function Treatments() {
       ],
       image: '/assets/lymphaticdrainagefacial.jpeg',
       category: 'facials',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17805524'
     },
     {
       id: '4',
