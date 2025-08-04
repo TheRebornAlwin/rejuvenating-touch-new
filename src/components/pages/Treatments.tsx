@@ -592,7 +592,7 @@ export function Treatments() {
       ],
       image: '/assets/chestfaceandscalpppp.jpg',
       category: 'add-ons',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17673865'
     },
     {
       id: '30',
