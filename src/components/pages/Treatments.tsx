@@ -26,7 +26,6 @@ export function Treatments() {
       image: '/assets/basicfacaiaallll.jpg',
       category: 'combinations',
       freshaLink: 'https://placeholder.com'
-      freshaLink: 'https://placeholder.com'
     },
     {
       id: '2',
