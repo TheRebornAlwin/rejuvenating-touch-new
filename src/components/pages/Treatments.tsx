@@ -132,7 +132,7 @@ export function Treatments() {
       ],
       image: '/assets/dermalogicapeel30min.jpg',
       category: 'peels',
-      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301316'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301324'
     },
     {
       id: '42',
