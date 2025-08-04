@@ -406,7 +406,7 @@ export function Treatments() {
       ],
       image: '/assets/hotstonechestfacescalp.jpg',
       category: 'massages',
-      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17676454'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566684'
     },
     {
       id: '38',
