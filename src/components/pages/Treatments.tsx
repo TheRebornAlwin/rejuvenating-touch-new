@@ -40,7 +40,7 @@ export function Treatments() {
       ],
       image: '/assets/luxuryyyfacial.jpg',
       category: 'facials',
-      freshaLink: 'apple.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17805519'
     },
     {
       id: '3',
