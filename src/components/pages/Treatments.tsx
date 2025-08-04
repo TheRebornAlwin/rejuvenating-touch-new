@@ -85,7 +85,7 @@ export function Treatments() {
       ],
       image: '/assets/glutesssfacial.jpg',
       category: 'facials',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A20239246'
     },
 
     // Peels
