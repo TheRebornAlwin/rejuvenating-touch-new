@@ -179,6 +179,7 @@ export function Treatments() {
       ],
       image: '/assets/luxuryandlymphaticfacialcombo.jpg',
       category: 'combinations'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566687'
     },
     {
       id: '9',
