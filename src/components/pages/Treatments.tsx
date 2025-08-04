@@ -40,7 +40,7 @@ export function Treatments() {
       ],
       image: '/assets/luxuryyyfacial.jpg',
       category: 'facials',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'apple.com'
     },
     {
       id: '3',
