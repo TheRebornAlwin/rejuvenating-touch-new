@@ -24,7 +24,9 @@ export function Treatments() {
         'Hydrating mask for instant glow',
       ],
       image: '/assets/basicfacaiaallll.jpg',
-      category: 'facials'
+      category: 'combinations',
+      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '2',
@@ -38,7 +40,8 @@ export function Treatments() {
         'Relaxing facial massage included',
       ],
       image: '/assets/luxuryyyfacial.jpg',
-      category: 'facials'
+      category: 'facials',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '3',
@@ -52,7 +55,8 @@ export function Treatments() {
         'Improves circulation and skin tone',
       ],
       image: '/assets/lymphaticdrainagefacial.jpeg',
-      category: 'facials'
+      category: 'facials',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '4',
@@ -66,7 +70,8 @@ export function Treatments() {
         'Smooth, hydrated skin',
       ],
       image: '/assets/backfacial.jpg',
-      category: 'facials'
+      category: 'facials',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '5',
@@ -80,7 +85,8 @@ export function Treatments() {
         'Improves skin texture and tone',
       ],
       image: '/assets/glutesssfacial.jpg',
-      category: 'facials'
+      category: 'facials',
+      freshaLink: 'https://placeholder.com'
     },
 
     // Peels
@@ -96,7 +102,8 @@ export function Treatments() {
         'Minimizes acne scars and dark spots effectively',
       ],
       image: '/assets/propowerpeell.jpeg',
-      category: 'peels'
+      category: 'peels',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '7',
@@ -110,7 +117,8 @@ export function Treatments() {
         'Customized to your skin needs',
       ],
       image: '/assets/propowerpeel60mins.jpg',
-      category: 'peels'
+      category: 'peels',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '41',
@@ -185,7 +193,8 @@ export function Treatments() {
         'Perfect introduction to our services',
       ],
       image: '/assets/basicfaciallymphaticdrainageeee.webp',
-      category: 'combinations'
+      category: 'combinations',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '10',
@@ -199,7 +208,8 @@ export function Treatments() {
         'Great value combination',
       ],
       image: '/assets/basicfacialbbbackmassage.jpg',
-      category: 'combinations'
+      category: 'combinations',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '11',
@@ -213,7 +223,8 @@ export function Treatments() {
         'Premium skin and body care',
       ],
       image: '/assets/luxuryfacialbackmassage.jpg',
-      category: 'combinations'
+      category: 'combinations',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '12',
@@ -227,7 +238,8 @@ export function Treatments() {
         'Addresses skin and muscle concerns',
       ],
       image: '/assets/backfacialbackmassage.jpg',
-      category: 'combinations'
+      category: 'combinations',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '35',
@@ -273,7 +285,8 @@ export function Treatments() {
         'Reduces muscle tension',
       ],
       image: '/assets/swedishfullbodymassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '14',
@@ -287,7 +300,8 @@ export function Treatments() {
         'Improves posture comfort',
       ],
       image: '/assets/swedishbackonlymassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '15',
@@ -301,7 +315,8 @@ export function Treatments() {
         'Mental and physical wellness',
       ],
       image: '/assets/pppreblendedaromatherapyfullbody.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '16',
@@ -315,7 +330,8 @@ export function Treatments() {
         'Natural mood enhancement',
       ],
       image: '/assets/preblendedaromatherapybackonlymassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '17',
@@ -329,7 +345,8 @@ export function Treatments() {
         'Improves circulation dramatically',
       ],
       image: '/assets/hotstonefullbodymassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '18',
@@ -343,7 +360,8 @@ export function Treatments() {
         'Perfect for chronic tension',
       ],
       image: '/assets/hotstonebackonlymassage.jpeg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '19',
@@ -357,7 +375,8 @@ export function Treatments() {
         'Improves overall circulation',
       ],
       image: '/assets/footmassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '20',
@@ -371,7 +390,8 @@ export function Treatments() {
         'Complete skincare routine included',
       ],
       image: '/assets/buccalmassage.jpg',
-      category: 'massages'
+      category: 'massages',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '37',
@@ -447,7 +467,8 @@ export function Treatments() {
         'Reduces hair regrowth over time',
       ],
       image: '/assets/fullllegwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '22',
@@ -461,7 +482,8 @@ export function Treatments() {
         'Professional results',
       ],
       image: '/assets/halflegwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '23',
@@ -475,7 +497,8 @@ export function Treatments() {
         'Reduces ingrown hairs',
       ],
       image: '/assets/underarmwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '24',
@@ -489,7 +512,8 @@ export function Treatments() {
         'Precise eyebrow shaping',
       ],
       image: '/assets/lipchinandeyebrowwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '25',
@@ -503,7 +527,8 @@ export function Treatments() {
         'Precise hair removal',
       ],
       image: '/assets/lipwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '26',
@@ -517,7 +542,8 @@ export function Treatments() {
         'Long-lasting smoothness',
       ],
       image: '/assets/chinwaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '27',
@@ -531,7 +557,8 @@ export function Treatments() {
         'Professional precision',
       ],
       image: '/assets/eyebrowswaxing.jpg',
-      category: 'waxing'
+      category: 'waxing',
+      freshaLink: 'https://placeholder.com'
     },
 
     // Beauty
@@ -547,7 +574,8 @@ export function Treatments() {
         'Professional application',
       ],
       image: '/assets/classiceyelashes.jpeg',
-      category: 'beauty'
+      category: 'beauty',
+      freshaLink: 'https://placeholder.com'
     },
 
     // Add-ons
@@ -563,7 +591,8 @@ export function Treatments() {
         'Enhanced relaxation',
       ],
       image: '/assets/chestfaceandscalpppp.jpg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '30',
@@ -577,7 +606,8 @@ export function Treatments() {
         'Luxury enhancement',
       ],
       image: '/assets/candlewaxoiladdon.jpg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '31',
@@ -591,7 +621,8 @@ export function Treatments() {
         'Prepares skin for treatments',
       ],
       image: '/assets/bodybrushinggg.jpg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '32',
@@ -604,7 +635,8 @@ export function Treatments() {
         'Perfect treatment finish',
       ],
       image: '/assets/coldstonemask.jpeg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '33',
@@ -617,7 +649,8 @@ export function Treatments() {
         'Enhances product absorption',
       ],
       image: '/assets/coldglobes.jpeg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     },
     {
       id: '34',
@@ -630,7 +663,8 @@ export function Treatments() {
         'Leaves skin plump and glowing',
       ],
       image: '/assets/jellymask.jpeg',
-      category: 'add-ons'
+      category: 'add-ons',
+      freshaLink: 'https://placeholder.com'
     }
   ];
 
@@ -805,7 +839,8 @@ export function Treatments() {
                 </div>
                 
                 <button 
-                  onClick={handleBookNow}
+                  onClick={() => window.open(treatment.freshaLink || 'https://fresha.com', '_blank')}
+                  className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                   className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
                 >
                   <span>Book Now</span>

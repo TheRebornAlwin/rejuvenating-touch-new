@@ -8,6 +8,7 @@ export interface Treatment {
   image: string;
   category: 'facials' | 'peels' | 'combinations' | 'massages' | 'waxing' | 'beauty' | 'add-ons';
   freshaLink?: string;
+  freshaLink?: string;
 }
 
 export interface Testimonial {
