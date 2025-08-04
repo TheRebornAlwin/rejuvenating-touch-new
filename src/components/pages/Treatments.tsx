@@ -208,7 +208,7 @@ export function Treatments() {
       ],
       image: '/assets/basicfacialbbbackmassage.jpg',
       category: 'combinations',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'apple.com'
     },
     {
       id: '11',
