@@ -7,6 +7,7 @@ export interface Treatment {
   benefits: string[];
   image: string;
   category: 'facials' | 'peels' | 'combinations' | 'massages' | 'waxing' | 'beauty' | 'add-ons';
+  freshaLink?: string;
 }
 
 export interface Testimonial {

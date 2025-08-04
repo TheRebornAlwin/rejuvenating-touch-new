@@ -112,6 +112,51 @@ export function Treatments() {
       image: '/assets/propowerpeel60mins.jpg',
       category: 'peels'
     },
+    {
+      id: '41',
+      name: 'Dermalogica Chemical Peel (30 mins)',
+      price: '£80',
+      duration: '45 minutes',
+      description: 'Professional Dermalogica chemical peel treatment targeting specific skin concerns. Customized formulation based on your skin analysis.',
+      benefits: [
+        'Professional Dermalogica formulation',
+        'Customized to your skin needs',
+        'Improves skin texture and tone',
+      ],
+      image: '/assets/dermalogicapeel30min.jpg',
+      category: 'peels',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301316'
+    },
+    {
+      id: '42',
+      name: 'Dermalogica Chemical Peel (60 mins)',
+      price: '£120',
+      duration: '75 minutes',
+      description: 'Extended professional Dermalogica chemical peel treatment with comprehensive aftercare. Includes preparation and post-peel soothing treatment.',
+      benefits: [
+        'Extended professional Dermalogica treatment',
+        'Comprehensive pre and post care',
+        'Maximum skin transformation results',
+      ],
+      image: '/assets/basicfacialbuccalmassagee.jpg',
+      category: 'peels',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301324'
+    },
+    {
+      id: '43',
+      name: 'Chemical Peel Skin Test',
+      price: 'FREE',
+      duration: '30 minutes',
+      description: 'Mandatory skin test required 48 hours before your chemical peel treatment. A consultation to determine skin conditions and overall daily activity. Please book before your chemical peel appointment.',
+      benefits: [
+        'Ensures safe chemical peel treatment',
+        'Professional skin condition assessment',
+        'Personalized treatment planning',
+      ],
+      image: '',
+      category: 'peels',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301354'
+    },
 
     // Combinations
     {
@@ -183,6 +228,36 @@ export function Treatments() {
       ],
       image: '/assets/backfacialbackmassage.jpg',
       category: 'combinations'
+    },
+    {
+      id: '35',
+      name: 'Basic Facial + Buccal Massage',
+      price: '£55',
+      duration: '1 hour',
+      description: 'Essential facial care combined with specialized buccal massage technique. Perfect combination for natural lifting and skin health.',
+      benefits: [
+        'Complete facial cleansing and care',
+        'Natural facial lifting and toning',
+        'Improves facial muscle tone',
+      ],
+      image: '/assets/basicfacialbuccalmassagee.jpg',
+      category: 'combinations',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A1650999'
+    },
+    {
+      id: '36',
+      name: 'Luxury Facial + Buccal Massage',
+      price: '£80',
+      duration: '75 minutes',
+      description: 'Premium facial treatment combined with specialized buccal massage. Ultimate luxury experience with natural lifting benefits.',
+      benefits: [
+        'Premium skincare with advanced techniques',
+        'Natural facial lifting and toning',
+        'Complete luxury treatment experience',
+      ],
+      image: '/assets/luxuryfacialbuccalmassage.jpg',
+      category: 'combinations',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A1650998'
     },
 
     // Massages
@@ -297,6 +372,66 @@ export function Treatments() {
       ],
       image: '/assets/buccalmassage.jpg',
       category: 'massages'
+    },
+    {
+      id: '37',
+      name: 'Hot Stone Massage (Chest, Face, & Scalp)',
+      price: '£40',
+      duration: '30 minutes',
+      description: 'Specialized hot stone massage targeting chest, face, and scalp areas. Perfect add-on or standalone relaxation treatment.',
+      benefits: [
+        'Targeted heat therapy for upper body',
+        'Relieves facial and scalp tension',
+        'Enhanced circulation and relaxation',
+      ],
+      image: '/assets/hotstonechestfacescalp.jpg',
+      category: 'massages',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17676454'
+    },
+    {
+      id: '38',
+      name: 'Hot Stone Massage (Full Body + Chest, Face, & Scalp)',
+      price: '£75',
+      duration: '90 minutes',
+      description: 'Complete hot stone massage experience including full body plus chest, face, and scalp. Ultimate relaxation treatment.',
+      benefits: [
+        'Complete body relaxation experience',
+        'Deep muscle penetration with heat therapy',
+        'Enhanced circulation throughout entire body',
+      ],
+      image: '',
+      category: 'massages',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566684'
+    },
+    {
+      id: '39',
+      name: 'Aromatherapy Massage (Full Body + Chest, Face, & Scalp)',
+      price: '£65',
+      duration: '90 minutes',
+      description: 'Complete aromatherapy massage experience including full body plus chest, face, and scalp. Enhanced with therapeutic essential oils.',
+      benefits: [
+        'Complete aromatherapy wellness experience',
+        'Therapeutic essential oil benefits',
+        'Mental and physical relaxation',
+      ],
+      image: '/assets/aromatherapyfullbodychestfacescalp.jpg',
+      category: 'massages',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566685'
+    },
+    {
+      id: '40',
+      name: 'Swedish Massage (Full Body + Chest, Face, & Scalp)',
+      price: '£65',
+      duration: '90 minutes',
+      description: 'Complete Swedish massage experience including full body plus chest, face, and scalp. Classic technique for ultimate relaxation.',
+      benefits: [
+        'Complete body relaxation with classic technique',
+        'Improved circulation throughout entire body',
+        'Reduces muscle tension and stress',
+      ],
+      image: '/assets/swedishfullbodychestfacescalp.jpg',
+      category: 'massages',
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=p%3A566681'
     },
 
     // Waxing
@@ -777,4 +912,11 @@ export function Treatments() {
       </section>
     </div>
   );
+  freshaLink?: string;
 }
+                   <button 
+                     onClick={() => window.open(treatment.freshaLink || 'https://fresha.com', '_blank')}
+                     className="luxury-shimmer w-full bg-forest text-white px-6 lg:px-8 py-3 lg:py-4 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
+                   >
+                     <span>Book Now</span>
+                   </button>
