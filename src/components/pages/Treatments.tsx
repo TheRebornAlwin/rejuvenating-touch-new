@@ -574,7 +574,7 @@ export function Treatments() {
       ],
       image: '/assets/classiceyelashes.jpeg',
       category: 'beauty',
-      freshaLink: 'https://placeholder.com'
+      freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A20794106'
     },
 
     // Add-ons
