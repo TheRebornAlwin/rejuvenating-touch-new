@@ -160,7 +160,7 @@ export function Treatments() {
         'Professional skin condition assessment',
         'Personalized treatment planning',
       ],
-      image: '',
+      image: 'assets/chemicalskintest.jpg',
       category: 'peels',
       freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A19301354'
     },
