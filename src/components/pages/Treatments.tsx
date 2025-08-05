@@ -628,6 +628,7 @@ export function Treatments() {
       id: '32',
       name: 'Cold Stone Mask Add-on',
       price: '£2',
+      duration: '5 minutes',
       description: 'Cooling stone mask treatment for puffy eyes and stressed skin. Perfect finishing touch.',
       benefits: [
         'Reduces puffiness',
