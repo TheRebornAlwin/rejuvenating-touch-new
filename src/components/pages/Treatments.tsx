@@ -643,7 +643,7 @@ export function Treatments() {
       id: '33',
       name: 'Cold Globes',
       price: '£2',
-      duration: '10 minutes',
+      duration: '5 minutes',
       description: 'Cooling facial globes treatment to reduce puffiness and soothe skin. Perfect finishing touch for any facial treatment.',
       benefits: [
         'Reduces facial puffiness instantly',
@@ -658,6 +658,7 @@ export function Treatments() {
       id: '34',
       name: 'Jelly Mask',
       price: '£7',
+      duration: '10 minutes',
       description: 'Hydrating jelly mask treatment that provides intense moisture and cooling relief. Leaves skin plump and refreshed.',
       benefits: [
         'Intense hydration boost',
