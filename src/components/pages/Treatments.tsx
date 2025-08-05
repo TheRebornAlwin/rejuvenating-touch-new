@@ -598,7 +598,7 @@ export function Treatments() {
       id: '30',
       name: 'Candle Wax Oil Add-on',
       price: '£10',
-      duration: '30 minutes',
+      duration: 'Whole duration of treatment',
       description: 'Luxurious warm candle wax oil treatment. Adds aromatherapy and deep moisturizing to any service.',
       benefits: [
         'Deep moisturizing treatment',
@@ -613,7 +613,7 @@ export function Treatments() {
       id: '31',
       name: 'Body Brushing Add-on',
       price: '£5',
-      duration: '30 minutes',
+      duration: '10 minutes',
       description: 'Dry body brushing to stimulate circulation and exfoliate skin. Perfect preparation for treatments.',
       benefits: [
         'Stimulates circulation',
