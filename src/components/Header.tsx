@@ -142,7 +142,7 @@ export function Header() {
               <div className="px-8 py-6">
                 <Button
                   href="#"
-                  className="w-full px-4 py-3 rounded-sm uppercase font-bold tracking-wider transition-all duration-300 hover:transform hover:scale-105 bg-white text-forest border-2 border-white"
+                  className="w-full px-4 py-3 rounded-sm uppercase font-bold tracking-wider transition-all duration-300 hover:transform hover:scale-105 bg-white text-white border-2 border-white"
                   onClick={handleBookNow}
                 >
                   Book Now

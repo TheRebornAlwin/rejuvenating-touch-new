@@ -477,7 +477,7 @@ export function Home() {
               <Button
                 href="#"
                 className="luxury-shimmer bg-cream text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
-                onClick={handleBookNow}
+                className="luxury-shimmer bg-white text-white px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-lg transition-all duration-300"
               >
                 Book Your Free Consultation
               </Button>

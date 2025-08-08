@@ -42,7 +42,7 @@ export function CookieBanner() {
         isAnimating ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
-      <div className="bg-forest text-white p-4 lg:p-6 shadow-2xl border-t-4 border-white">
+      <div className="bg-forest text-white p-4 lg:p-6 shadow-2xl">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             {/* Cookie Icon and Message */}
@@ -75,7 +75,7 @@ export function CookieBanner() {
             </div>
             
             {/* Buttons */}
-            <div className="flex items-center space-x-3 lg:space-x-4 flex-shrink-0">
+            <div className="flex items-center justify-center sm:justify-start space-x-3 lg:space-x-4 flex-shrink-0 w-full sm:w-auto">
               <button
                 onClick={handleDeny}
                 className="px-4 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-semibold text-white border-2 border-white/30 rounded-sm hover:border-white/50 transition-colors duration-300"
