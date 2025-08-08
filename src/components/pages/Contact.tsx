@@ -295,7 +295,7 @@ export function Contact() {
               </p>
               <Button
                 href="#"
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-white text-forest border-2 border-white"
+                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-white text-white border-2 border-white"
                 onClick={handleInstagram}
               >
                 Follow on Instagram
