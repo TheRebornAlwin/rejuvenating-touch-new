@@ -1,13 +1,17 @@
 import React from 'react';
 
 export function Terms() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen pt-24 premium-white-gradient page-transition-enter page-transition-enter-active">
       <div className="container-custom section-padding">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-serif text-forest mb-8">Terms & Conditions</h1>
           
-          <div className="space-y-8 text-white">
+          <div className="space-y-8 text-forest">
             <section>
               <h2 className="text-2xl font-serif font-semibold mb-4">Appointment Booking & Cancellation</h2>
               <ul className="list-disc list-inside space-y-2 ml-4">

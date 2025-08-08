@@ -1,13 +1,17 @@
 import React from 'react';
 
 export function CookiePolicy() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen pt-24 premium-white-gradient page-transition-enter page-transition-enter-active">
       <div className="container-custom section-padding">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-serif text-forest mb-8">Cookie Policy</h1>
           
-          <div className="space-y-8 text-white">
+          <div className="space-y-8 text-forest">
             <section>
               <h2 className="text-2xl font-serif font-semibold mb-4">What Are Cookies</h2>
               <p className="text-lg leading-relaxed">

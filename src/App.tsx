@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { CookieBanner } from './components/CookieBanner';
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Treatments } from './components/pages/Treatments';
@@ -33,6 +34,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CookieBanner />
       </div>
     </Router>
   );
