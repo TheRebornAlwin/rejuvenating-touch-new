@@ -556,7 +556,7 @@ export function Treatments() {
         'Perfectly defined shape',
         'Professional precision',
       ],
-      image: '/assets/eyebrowswaxing.jpg',
+      image: '/assets/eyebrowswaxingfr.jpg',
       category: 'waxing',
       freshaLink: 'https://www.fresha.com/a/rejuvenating-touch-cardiff-94-woodville-road-w5mmt0z3?service=s%3A17671398'
     },
