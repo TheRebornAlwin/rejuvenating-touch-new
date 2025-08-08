@@ -278,12 +278,9 @@ export function Contact() {
                 Get instant answers to your questions. Message anytime for 
                 quick skincare advice or booking help.
               </p>
-              <button 
-                onClick={handleWhatsApp}
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
-              >
-                <span>Message on WhatsApp</span>
-              </button>
+              <p className="text-white font-semibold text-sm lg:text-base">
+                WhatsApp Number: +44 07809 259269
+              </p>
             </div>
             
             {/* Instagram */}
@@ -298,7 +295,7 @@ export function Contact() {
               </p>
               <Button
                 href="#"
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-white text-forest border-2 border-white"
                 onClick={handleInstagram}
               >
                 Follow on Instagram
@@ -379,17 +376,11 @@ export function Contact() {
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
             <Button
                 onClick={() => window.open('tel:07809259269')}
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
+                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-forest text-white border-2 border-forest"
               href="tel:07809259269"
               target="_self"
               >
               Call Now: 07809 259269
-            </Button>
-            <Button
-                className="luxury-shimmer px-4 lg:px-6 py-3 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-base transition-all duration-300 bg-cream text-forest border-2 border-cream"
-              href="#"
-              >
-              Message on WhatsApp
             </Button>
           </div>
           </div>

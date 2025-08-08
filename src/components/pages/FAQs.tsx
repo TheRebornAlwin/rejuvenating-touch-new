@@ -220,7 +220,7 @@ export function FAQs() {
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
               <Button
                 href="mailto:rejuvenatingtouchacbpm@gmail.com"
-                className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-cream text-forest border-2 border-cream"
+                className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white border-2 border-forest"
                 onClick={handleContactUs}
               >
                 Send Us an Email

@@ -54,7 +54,7 @@ export function CookieBanner() {
                   height="24" 
                   viewBox="0 0 24 24" 
                   fill="none" 
-                  className="text-gold"
+                  className="text-white"
                 >
                   <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.9"/>
                   <circle cx="16" cy="8" r="3" fill="#014900"/>
@@ -84,7 +84,7 @@ export function CookieBanner() {
               </button>
               <button
                 onClick={handleAccept}
-                className="px-4 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-semibold bg-gold text-forest rounded-sm hover:bg-gold/90 transition-colors duration-300"
+                className="px-4 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-semibold bg-white text-forest rounded-sm hover:bg-white/90 transition-colors duration-300"
               >
                 I Accept
               </button>

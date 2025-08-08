@@ -252,13 +252,6 @@ export function Results() {
             >
               Book Your Free Consultation
             </Button>
-            <Button
-              href="#"
-              className="luxury-shimmer px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300 bg-forest text-white border-2 border-forest"
-              onClick={() => window.open('https://wa.me/07809259269', '_blank')}
-            >
-              Ask About Results
-            </Button>
           </div>
           </div>
         </div>
