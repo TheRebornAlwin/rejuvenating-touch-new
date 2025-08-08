@@ -150,7 +150,7 @@ export function Home() {
                 <Button
                   onClick={handleBookNow}
                   href="#"
-                  className="luxury-shimmer bg-forest text-white px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-lg transition-all duration-300"
+                  className="luxury-shimmer bg-white text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-sm lg:text-lg transition-all duration-300"
                 >
                   Book Your Free Consultation
                 </Button>
@@ -242,7 +242,7 @@ export function Home() {
           
           <div className="text-center">
             <Link 
-              to="/results" 
+              className="luxury-shimmer bg-white text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
               className="inline-flex items-center text-forest font-semibold text-base lg:text-lg hover:text-gold transition-colors group"
             >
               View Complete Gallery

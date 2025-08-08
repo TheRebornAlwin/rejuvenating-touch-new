@@ -146,8 +146,8 @@ export function FAQs() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center space-x-2 lg:space-x-3 px-4 lg:px-8 py-3 lg:py-4 rounded-full font-semibold text-sm lg:text-base transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'bg-forest text-gold border-2 border-gold'
-                    : 'luxury-card text-forest hover:bg-forest hover:text-gold border-2 border-forest/30'
+                    ? 'bg-forest text-white border-2 border-gold'
+                    : 'luxury-card text-forest hover:bg-forest hover:text-white border-2 border-forest/30'
                 }`}
               >
                 <span>{category.name}</span>

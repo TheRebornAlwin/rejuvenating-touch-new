@@ -749,8 +749,8 @@ export function Treatments() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center justify-center space-x-1 lg:space-x-2 px-2 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-xs lg:text-sm transition-all duration-500 shadow-md hover:shadow-lg border-2 ${
                   activeCategory === category.id
-                    ? 'bg-forest text-gold border-gold shadow-2xl'
-                    : 'bg-white text-forest hover:bg-forest hover:text-gold border-forest/30 hover:border-gold/70'
+                    ? 'bg-forest text-white border-gold shadow-2xl'
+                    : 'bg-white text-forest hover:bg-forest hover:text-white border-forest/30 hover:border-gold/70'
                 }`}
               >
                 <category.icon className="w-3 lg:w-4 h-3 lg:h-4" />
@@ -937,12 +937,6 @@ export function Treatments() {
               onClick={handleBookNow}
             >
               Book Your Treatment Now
-            </button>
-            <button
-              className="luxury-shimmer bg-cream text-forest px-6 lg:px-10 py-4 lg:py-5 rounded-sm uppercase font-bold tracking-wider text-base lg:text-lg transition-all duration-300"
-              onClick={() => window.open('https://wa.me/07809259269', '_blank')}
-            >
-              Ask About Services
             </button>
           </div>
           </div>

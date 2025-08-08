@@ -42,7 +42,7 @@ export function CookieBanner() {
         isAnimating ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
-      <div className="bg-forest text-white p-4 lg:p-6 shadow-2xl border-t-4 border-gold">
+      <div className="bg-forest text-white p-4 lg:p-6 shadow-2xl border-t-4 border-white">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             {/* Cookie Icon and Message */}
