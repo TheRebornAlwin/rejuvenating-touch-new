@@ -71,7 +71,7 @@ export function Home() {
     },
     {
       name: "Rachel K.",
-      text: "I came in for a wax before holiday for my underarms and legs. It's quick, clean, and she’s so calm you forget it’s waxing. Prices are fair and the room is spotless.",
+      text: "I came in for a wax before holiday for my underarms and legs. It's quick, clean, and she’s so calm you forget it’s waxing. Prices are fair and the room looks so relaxing with the plants.",
       rating: 5,
       treatment: "Complete Transformation Package"
     },
