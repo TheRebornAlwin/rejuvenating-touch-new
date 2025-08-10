@@ -15,7 +15,7 @@ export function Results() {
       treatment: 'Pro Power Peel Series',
       description: 'Significant improvement in acne scarring and skin texture',
       testimonial: "I never thought my acne scars would fade this much. Val's Pro Power Peel series completely transformed my skin and gave me back my confidence.",
-      clientName: "Amelia R."
+      clientName: "Chloe B."
     },
     {
       id: '2',
