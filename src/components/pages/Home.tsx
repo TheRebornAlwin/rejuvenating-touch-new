@@ -65,7 +65,7 @@ export function Home() {
     },
     {
       name: "Jessica T.",
-      text: "Hot stone back massage was unreal. I sit at a desk all day and my shoulders feel welded shut. 60 mins later I could turn my neck without swearing. Rebooked before I left.",
+      text: "Hot stone back massage was unreal. I sit at a desk all day and my shoulders feel welded shut. 60 minutes later, I could turn my neck and actually stretch without pain, I rebooked for another appointment before I left. I love this so much.",
       rating: 5,
       treatment: "Scar Reduction Series"
     },
