@@ -64,7 +64,7 @@ export function Results() {
       sessions: 4,
       treatment: 'Intensive Hydrating Series',
       description: 'Restored moisture balance and natural radiance',
-      testimonial: "I used the 20% off student discount and got a Swedish back massage. It felt so good, and it only took a few minutes to book on Fresha.",
+      testimonial: "New client 10% off tempted me in; the service quality kept me. I booked a facial “just to try,” and left with a plan that finally makes sense for my skin.",
       clientName: "Elin D."
     },
     {
