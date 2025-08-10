@@ -77,7 +77,7 @@ export function Home() {
     },
     {
       name: "Sophie W.",
-      text: "I used to avoid mirrors. Now I can't stop looking at my skin. Val gave me back my confidence.",
+      text: "I used the 20% off student discount and got a Swedish back massage. It felt so good, and it only took a few minutes to book on Fresha.",
       rating: 5,
       treatment: "Pigmentation Correction"
     },
