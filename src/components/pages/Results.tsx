@@ -84,7 +84,7 @@ export function Results() {
       sessions: 7,
       treatment: 'Full Transformation Package',
       description: 'Comprehensive skin health improvement',
-      testimonial: "I tried the jelly mask add-on after my facial and it felt like heaven. Cooling, no redness after, and my makeup sat so nicely the next day. Little things like that make me loyal.",
+      testimonial: "Had the lymphatic drainage facial before a wedding. Subtle de-puffing, less jaw tension, and I didn’t need as much contour. I enjoyed the cold globe add-on as a finish as well!",
       clientName: "Emily C."
     }
   ];
