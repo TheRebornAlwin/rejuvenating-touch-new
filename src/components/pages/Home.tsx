@@ -65,7 +65,7 @@ export function Home() {
     },
     {
       name: "Jessica T.",
-      text: "Val understood my acne scars when no one else could. Six months later, I don't recognize my own skin—in the best way.",
+      text: "Hot stone back massage was unreal. I sit at a desk all day and my shoulders feel welded shut. 60 mins later I could turn my neck without swearing. Rebooked before I left.",
       rating: 5,
       treatment: "Scar Reduction Series"
     },
