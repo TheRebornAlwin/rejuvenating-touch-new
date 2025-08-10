@@ -185,7 +185,7 @@ export function Results() {
                   </div>
                   
                   {/* Before/After Label */}
-                  <div className="absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold">
+                  <div className={`absolute top-2 lg:top-4 left-2 lg:left-4 bg-forest/90 text-gold px-3 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-base font-semibold transition-opacity duration-500 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     Before & After
                   </div>
                 </div>
