@@ -64,7 +64,7 @@ export function Results() {
       sessions: 4,
       treatment: 'Intensive Hydrating Series',
       description: 'Restored moisture balance and natural radiance',
-      testimonial: "New client 10% off tempted me in; the service quality kept me. I booked a facial “just to try,” and left with a plan that finally makes sense for my skin.",
+      testimonial: "The 10% discount for new clients made me book my first appointment, but the service quality kept me going there, even to this day. The first time, I booked a facial “just to try,” and left with a plan that finally makes sense for my skin.",
       clientName: "Elin D."
     },
     {
