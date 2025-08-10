@@ -25,7 +25,7 @@ export function Results() {
       treatment: 'Targeted Chemical Peels',
       description: 'Dramatic reduction in dark spots and even skin tone',
       testimonial: "Classic lashes for a photoshoot. She checked what I wanted (natural, not heavy), and did exactly that. Also took photos with my permission, and it looked great on her feed and mine!",
-      clientName: "Freya P."
+      clientName: "Megan H."
     },
     {
       id: '3',
@@ -35,7 +35,7 @@ export function Results() {
       treatment: 'Hydrating Facials + Peels',
       description: 'Reduced fine lines and improved skin elasticity',
       testimonial: "My skin looks years younger! The combination of facials and peels that Val recommended worked better than any expensive cream I've tried.",
-      clientName: "Megan H."
+      clientName: "Freya P."
     },
     {
       id: '4',
