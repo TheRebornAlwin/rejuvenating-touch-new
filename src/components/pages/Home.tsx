@@ -83,7 +83,7 @@ export function Home() {
     },
     {
       name: "Charlotte B.",
-      text: "Worth every penny. The results speak louder than any review ever could. My skin tells my success story now.",
+      text: "I tried the jelly mask add-on after my facial and it felt like heaven. Cooling, no redness after, and my makeup sat so nicely the next day. Little things like that make me loyal.",
       rating: 5,
       treatment: "Premium Facial Series"
     }
