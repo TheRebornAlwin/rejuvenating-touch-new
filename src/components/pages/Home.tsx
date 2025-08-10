@@ -55,7 +55,7 @@ export function Home() {
       name: "Emma L.",
       text: "After years of trying everything, Val actually listened and understood my skin. Now I wake up confident.",
       rating: 5,
-      treatment: "Deep Cleansing Protocol"
+      treatment: "Deep Cleansing fProtocol"
     },
     {
       name: "Kate R.",
