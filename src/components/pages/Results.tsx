@@ -15,7 +15,7 @@ export function Results() {
       treatment: 'Pro Power Peel Series',
       description: 'Significant improvement in acne scarring and skin texture',
       testimonial: "I never thought my acne scars would fade this much. Val's Pro Power Peel series completely transformed my skin and gave me back my confidence.",
-      clientName: "Sarah M."
+      clientName: "Amelia R."
     },
     {
       id: '2',
@@ -25,7 +25,7 @@ export function Results() {
       treatment: 'Targeted Chemical Peels',
       description: 'Dramatic reduction in dark spots and even skin tone',
       testimonial: "The dark spots that bothered me for years are finally gone. Val's expertise with chemical peels is incredible - she knew exactly what my skin needed.",
-      clientName: "Emma L."
+      clientName: "Freya P."
     },
     {
       id: '3',
@@ -35,7 +35,7 @@ export function Results() {
       treatment: 'Hydrating Facials + Peels',
       description: 'Reduced fine lines and improved skin elasticity',
       testimonial: "My skin looks years younger! The combination of facials and peels that Val recommended worked better than any expensive cream I've tried.",
-      clientName: "Kate R."
+      clientName: "Megan H."
     },
     {
       id: '4',
@@ -45,7 +45,7 @@ export function Results() {
       treatment: 'Deep Cleansing Facials',
       description: 'Smoother, more refined skin texture and pore size',
       testimonial: "My skin feels like silk now. The deep cleansing facials made such a difference to my pore size and overall texture.",
-      clientName: "Jessica T."
+      clientName: "Olivia J."
     },
     {
       id: '5',
@@ -65,7 +65,7 @@ export function Results() {
       treatment: 'Intensive Hydrating Series',
       description: 'Restored moisture balance and natural radiance',
       testimonial: "I used the 20% off student discount and got a Swedish back massage. It felt so good, and it only took a few minutes to book on Fresha.",
-      clientName: "Sophie W."
+      clientName: "Elin D."
     },
     {
       id: '7',
@@ -75,7 +75,7 @@ export function Results() {
       treatment: 'Targeted Acne Protocol',
       description: 'Clear, healthy skin transformation',
       testimonial: "After struggling with acne for years, Val's targeted approach finally gave me the clear skin I dreamed of. I feel so much more confident now.",
-      clientName: "Charlotte B."
+      clientName: "Hannah F."
     },
     {
       id: '8',
@@ -85,7 +85,7 @@ export function Results() {
       treatment: 'Full Transformation Package',
       description: 'Comprehensive skin health improvement',
       testimonial: "I tried the jelly mask add-on after my facial and it felt like heaven. Cooling, no redness after, and my makeup sat so nicely the next day. Little things like that make me loyal.",
-      clientName: "Lucy H."
+      clientName: "Emily C."
     }
   ];
 
