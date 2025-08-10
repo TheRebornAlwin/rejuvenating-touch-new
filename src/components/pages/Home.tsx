@@ -71,7 +71,7 @@ export function Home() {
     },
     {
       name: "Rachel K.",
-      text: "The personalized approach is everything. Val doesn't just treat symptoms—she transforms your entire relationship with your skin.",
+      text: "I came in for a wax before holiday for my underarms and legs. It's quick, clean, and she’s so calm you forget it’s waxing. Prices are fair and the room is spotless.",
       rating: 5,
       treatment: "Complete Transformation Package"
     },
