@@ -25,7 +25,7 @@ export function Results() {
       treatment: 'Targeted Chemical Peels',
       description: 'Dramatic reduction in dark spots and even skin tone',
       testimonial: "Classic lashes for a photoshoot. She checked what I wanted (natural, not heavy), and did exactly that. Also took photos with my permission, and it looked great on her feed and mine!",
-      clientName: "Megan H."
+      clientName: "Olivia J."
     },
     {
       id: '3',
@@ -45,7 +45,7 @@ export function Results() {
       treatment: 'Deep Cleansing Facials',
       description: 'Smoother, more refined skin texture and pore size',
       testimonial: "My skin feels like silk now. The deep cleansing facials made such a difference to my pore size and overall texture.",
-      clientName: "Olivia J."
+      clientName: "Megan H."
     },
     {
       id: '5',
