@@ -53,9 +53,9 @@ export function Home() {
     },
     {
       name: "Emma L.",
-      text: "After years of trying everything, Val actually listened and understood my skin. Now I wake up confident.",
+      text: "I went in for a luxury facial and came out looking like I slept 10 hours, and my skin felt the best it has in the past 10 years. She has a clean clinic and a relaxing room, and after the treatment, she sent me home with simple aftercare and it actually worked.",
       rating: 5,
-      treatment: "Deep Cleansing fProtocol"
+      treatment: "Deep Cleansing Protocol"
     },
     {
       name: "Kate R.",
