@@ -59,7 +59,7 @@ export function Home() {
     },
     {
       name: "Kate R.",
-      text: "My skin has never looked this good. Every session feels like self-care that actually works.",
+      text: "I’m 41, have sensitive skin, and am terrified of peels. Val talked to me about my needs first, and then tailored a gentle peel for me. After a few days, my skin looked fresh for the first time in ages.",
       rating: 5,
       treatment: "Anti-Aging Facial Series"
     },
