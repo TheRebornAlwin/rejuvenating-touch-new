@@ -476,7 +476,7 @@ export function Home() {
             <div className="flex justify-center pt-6 lg:pt-8 pb-6 lg:pb-8">
               <Button
                 href="#"
-                className="luxury-shimmer bg-white text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
+                className="luxury-shimmer bg-white text-forest px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300 hover:bg-white/90"
               >
                 Book Your Free Consultation
               </Button>
