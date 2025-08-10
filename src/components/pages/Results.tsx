@@ -54,7 +54,7 @@ export function Results() {
       sessions: 8,
       treatment: 'Comprehensive Care Plan',
       description: 'Complete skin transformation and long-term health',
-      testimonial: "Val's comprehensive approach changed everything. It's not just about one treatment - it's about understanding your skin's journey.",
+      testimonial: "Aromatherapy back massage was the calm I needed. No small talk unless you wanted it. Comfortable bed, and I left feeling like I’d been reset after.",
       clientName: "Amelia R."
     },
     {
