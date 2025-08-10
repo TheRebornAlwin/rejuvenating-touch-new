@@ -55,7 +55,7 @@ export function Results() {
       treatment: 'Comprehensive Care Plan',
       description: 'Complete skin transformation and long-term health',
       testimonial: "Val's comprehensive approach changed everything. It's not just about one treatment - it's about understanding your skin's journey.",
-      clientName: "Chloe B."
+      clientName: "Amelia R."
     },
     {
       id: '6',
