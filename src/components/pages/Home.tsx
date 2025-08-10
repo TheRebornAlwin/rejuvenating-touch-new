@@ -47,7 +47,7 @@ export function Home() {
   const testimonials = [
     {
       name: "Sarah M.",
-      text: "I booked a Pro Power Peel after watching Val's treatments on Insta for a week or so. She explained every step, and made it very clear what NOT to expect (which nobody does nowadays for some reason)! It's now week 3 and my skin pigmentation is lighter and texture is smoother, very satisfied with the results!",
+      text: "I booked a Pro Power Peel after watching Val's treatments on Insta for a week or so. She explained every step, and made it very clear what NOT to expect (which nobody does nowadays for some reason). It's now week 3 and my skin pigmentation is lighter and texture is smoother, very satisfied with the results!",
       rating: 5,
       treatment: "Pro Power Peel Series"
     },
