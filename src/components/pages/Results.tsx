@@ -64,7 +64,7 @@ export function Results() {
       sessions: 4,
       treatment: 'Intensive Hydrating Series',
       description: 'Restored moisture balance and natural radiance',
-      testimonial: "My skin has never been more hydrated and glowing. People keep asking what I'm using - it's all thanks to Val's treatments!",
+      testimonial: "I used the 20% off student discount and got a Swedish back massage. It felt so good, and it only took a few minutes to book on Fresha.",
       clientName: "Sophie W."
     },
     {
