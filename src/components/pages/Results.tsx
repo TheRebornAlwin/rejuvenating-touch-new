@@ -24,7 +24,7 @@ export function Results() {
       sessions: 6,
       treatment: 'Targeted Chemical Peels',
       description: 'Dramatic reduction in dark spots and even skin tone',
-      testimonial: "The dark spots that bothered me for years are finally gone. Val's expertise with chemical peels is incredible - she knew exactly what my skin needed.",
+      testimonial: "Classic lashes for a photoshoot. She checked what I wanted (natural, not heavy), and did exactly that. Also took photos with my permission, and it looked great on her feed and mine!",
       clientName: "Freya P."
     },
     {
