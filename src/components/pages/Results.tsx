@@ -84,7 +84,7 @@ export function Results() {
       sessions: 7,
       treatment: 'Full Transformation Package',
       description: 'Comprehensive skin health improvement',
-      testimonial: "The results speak louder than any review ever could. My skin tells my success story now. Thank you Val for giving me back my confidence.",
+      testimonial: "I tried the jelly mask add-on after my facial and it felt like heaven. Cooling, no redness after, and my makeup sat so nicely the next day. Little things like that make me loyal.",
       clientName: "Lucy H."
     }
   ];
