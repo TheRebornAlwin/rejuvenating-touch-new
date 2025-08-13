@@ -75,13 +75,13 @@ export default function TrustedLogosMarquee() {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true
+            pauseOnMouseEnter: false
           }}
-          // long transition to mimic marquee-like flow
-          speed={8000} // 8 seconds for smooth, professional pace
+          // constant speed for true continuous marquee
+          speed={15000} // 15 seconds for perfectly smooth continuous flow
           allowTouchMove={false}
-          // add extra duplicates to prevent any gap on loop
-          loopAdditionalSlides={credibilityMarkers.length}
+          // triple duplication ensures seamless infinite loop
+          loopAdditionalSlides={credibilityMarkers.length * 2}
         >
           {credibilityMarkers.map((marker, i) => (
             <SwiperSlide className="rt-credibility-slide" key={`marker-${i}`}>
@@ -100,9 +100,27 @@ export default function TrustedLogosMarquee() {
               </div>
             </SwiperSlide>
           ))}
-          {/* Duplicate once more to ensure seamless loop across wide screens */}
+          {/* Second duplication for seamless loop */}
           {credibilityMarkers.map((marker, i) => (
             <SwiperSlide className="rt-credibility-slide" key={`marker-dup-${i}`}>
+              <div className="rt-credibility-card">
+                <div className="rt-credibility-icon">
+                  <marker.icon className={`w-6 h-6 ${marker.color}`} />
+                </div>
+                <div className="rt-credibility-content">
+                  <div className={`rt-credibility-stat ${marker.color}`}>
+                    {marker.stat}
+                  </div>
+                  <div className="rt-credibility-label">
+                    {marker.label}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* Third duplication for perfect continuous flow */}
+          {credibilityMarkers.map((marker, i) => (
+            <SwiperSlide className="rt-credibility-slide" key={`marker-dup2-${i}`}>
               <div className="rt-credibility-card">
                 <div className="rt-credibility-icon">
                   <marker.icon className={`w-6 h-6 ${marker.color}`} />
