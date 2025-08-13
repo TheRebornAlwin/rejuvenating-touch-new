@@ -272,9 +272,6 @@ export function Home() {
                 <h2 className="text-3xl lg:text-5xl font-serif text-forest mb-4 lg:mb-6">
                 Why Cardiff Women Choose Us
                 </h2>
-                <p className="text-lg lg:text-xl text-forest max-w-2xl lg:max-w-none">
-                Because your skin deserves more than one-size-fits-all solutions
-                </p>
               </div>
           
               <div className="space-y-6 lg:space-y-8">
@@ -293,6 +290,21 @@ export function Home() {
                   </div>
                 </div>
                 ))}
+              </div>
+              
+              <p className="text-lg lg:text-xl text-forest text-center">
+                Because your skin deserves more than one-size-fits-all solutions
+              </p>
+              
+              <div className="text-center">
+                <Button
+                  onClick={handleBookNow}
+                  href="#"
+                  variant="cta"
+                  className="luxury-shimmer mt-6 lg:mt-8 px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
+                >
+                  Book Your Free Consultation
+                </Button>
               </div>
             </div>
           </div>
@@ -419,7 +431,7 @@ export function Home() {
                 
                 {/* Testimonial Content */}
                 <div className={`lg:col-span-2 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="bg-white/10 backdrop-blur-sm p-6 lg:p-8 rounded-2xl premium-shadow relative">
+                  <div className="bg-white p-6 lg:p-8 rounded-2xl premium-shadow relative">
                 <Quote className="w-8 lg:w-12 h-8 lg:h-12 text-gold/40 absolute top-4 lg:top-6 left-4 lg:left-6" />
                 <div className="pt-6 lg:pt-8">
                   <div className="flex items-center space-x-1 mb-4 lg:mb-6">
@@ -427,11 +439,11 @@ export function Home() {
                       <Star key={i} className="w-5 lg:w-6 h-5 lg:h-6 text-gold fill-gold" />
                     ))}
                   </div>
-                      <p className="text-base lg:text-lg text-white mb-4 lg:mb-6 italic leading-relaxed font-medium">
+                      <p className="text-base lg:text-lg text-forest mb-4 lg:mb-6 italic leading-relaxed font-medium">
                     "{testimonial.text}"
                   </p>
                   <div>
-                        <p className="font-serif font-bold text-gold text-base lg:text-lg">
+                        <p className="font-serif font-bold text-forest text-base lg:text-lg">
                       {testimonial.name}
                     </p>
                   </div>
@@ -445,15 +457,15 @@ export function Home() {
           {/* Remaining Testimonials - Scrollable Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {testimonials.slice(3).map((testimonial, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm p-4 lg:p-6 rounded-xl premium-shadow">
+              <div key={index} className="bg-white p-4 lg:p-6 rounded-xl premium-shadow">
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 text-gold fill-current" />
                   ))}
                 </div>
-                <p className="text-xs lg:text-sm text-white mb-4 italic">"{testimonial.text}"</p>
+                <p className="text-xs lg:text-sm text-forest mb-4 italic">"{testimonial.text}"</p>
                 <div className="text-xs">
-                  <p className="font-semibold text-gold">{testimonial.name}</p>
+                  <p className="font-semibold text-forest">{testimonial.name}</p>
                 </div>
               </div>
             ))}
