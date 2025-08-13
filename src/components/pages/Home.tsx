@@ -293,7 +293,7 @@ export function Home() {
               </div>
               
               <p className="text-lg lg:text-xl text-forest text-center">
-                Because your skin deserves more than one-size-fits-all solutions
+                Because your skin deserves more than one-size-fits-all solutions...
               </p>
               
               <div className="text-center">
