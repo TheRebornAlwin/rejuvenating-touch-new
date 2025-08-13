@@ -257,7 +257,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left - Client Image Placeholder */}
             <div className="space-y-4 lg:space-y-6 animate-scale-in">
-              <div className="aspect-[3/4] lg:aspect-[4/3] premium-card rounded-xl flex items-center justify-center border border-gold/20">
+              <div className="aspect-[3/8] lg:aspect-[2/3] premium-card rounded-xl flex items-center justify-center border border-gold/20">
                 <img 
                   src="/assets/whycardiffwomenchooseus.jpg" 
                   alt="Cardiff women who choose our aesthetic treatments" 
@@ -301,7 +301,7 @@ export function Home() {
                   onClick={handleBookNow}
                   href="#"
                   variant="cta"
-                  className="luxury-shimmer mt-6 lg:mt-8 px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
+                  className="luxury-shimmer mt-4 lg:mt-6 px-8 lg:px-12 py-4 lg:py-6 rounded-sm uppercase font-bold tracking-wider text-lg lg:text-xl transition-all duration-300"
                 >
                   Book Your Free Consultation
                 </Button>
