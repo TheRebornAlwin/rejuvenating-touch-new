@@ -10,7 +10,7 @@ const credibilityMarkers = [
     icon: Star,
     stat: "500+",
     label: "Cardiff Women Transformed",
-    color: "text-gold"
+    color: "text-white"
   },
   {
     icon: Award,
@@ -22,7 +22,7 @@ const credibilityMarkers = [
     icon: Shield,
     stat: "5-Star",
     label: "Rated Aesthetic Clinic",
-    color: "text-gold"
+    color: "text-white"
   },
   {
     icon: Users,
@@ -34,7 +34,7 @@ const credibilityMarkers = [
     icon: CheckCircle,
     stat: "Dermalogica",
     label: "Certified Professional",
-    color: "text-gold"
+    color: "text-white"
   },
   {
     icon: Heart,
@@ -46,7 +46,7 @@ const credibilityMarkers = [
     icon: Sparkles,
     stat: "1000+",
     label: "Successful Treatments",
-    color: "text-gold"
+    color: "text-white"
   },
   {
     icon: Clock,

@@ -41,7 +41,7 @@
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #CBAE76;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
@@ -60,11 +60,6 @@
   align-items: center;
   justify-content: center;
   margin-right: 48px;
-  transition: transform 0.3s ease;
-}
-
-.rt-credibility-slide:hover {
-  transform: scale(1.05);
 }
 
 /* Credibility Card */
@@ -86,7 +81,6 @@
   background: rgba(255, 255, 255, 0.15);
   border-color: rgba(203, 174, 118, 0.5);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
 }
 
 /* Icon Container */
@@ -133,7 +127,7 @@
 
 /* Color classes */
 .text-gold {
-  color: #CBAE76;
+  color: #ffffff;
 }
 
 .text-white {
@@ -199,22 +193,4 @@
   .rt-credibility-label {
     font-size: 12px;
   }
-}
-
-/* Enhanced animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-3px); }
-}
-
-.rt-credibility-card {
-  animation: float 6s ease-in-out infinite;
-}
-
-.rt-credibility-card:nth-child(2n) {
-  animation-delay: -2s;
-}
-
-.rt-credibility-card:nth-child(3n) {
-  animation-delay: -4s;
 }
