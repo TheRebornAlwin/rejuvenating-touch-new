@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Award, Shield, Heart, ArrowRight, Quote, Sparkles, Leaf, CheckCircle, Users, Clock } from 'lucide-react';
 import { Button } from '../ui/Button';
+import TrustedLogosMarquee from '../TrustedLogosMarquee';
 
 export function Home() {
   useEffect(() => {
@@ -173,6 +174,9 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Trusted Logos Marquee */}
+      <TrustedLogosMarquee />
 
       {/* Client Results Gallery */}
       <section className="pt-12 lg:pt-20 pb-12 lg:pb-20 spacious-luxury-gradient">
