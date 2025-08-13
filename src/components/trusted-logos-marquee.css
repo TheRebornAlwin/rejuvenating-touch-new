@@ -1,138 +1,220 @@
 /* Container */
-.rt-logos-wrap {
+.rt-credibility-wrap {
   width: 100%;
-  padding: 24px 0;
-  background: #EDDBC3;
+  padding: 32px 0;
+  background: linear-gradient(135deg, #014900 0%, #025d02 50%, #014900 100%);
   border-top: 2px solid rgba(203, 174, 118, 0.3);
   border-bottom: 2px solid rgba(203, 174, 118, 0.3);
   position: relative;
+  overflow: hidden;
 }
 
-.rt-logos-wrap::before {
+.rt-credibility-wrap::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(203, 174, 118, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(203, 174, 118, 0.6), transparent);
 }
 
-.rt-logos-wrap::after {
+.rt-credibility-wrap::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(203, 174, 118, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(203, 174, 118, 0.6), transparent);
 }
 
-.rt-logos-inner {
+.rt-credibility-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 16px 24px;
   overflow: hidden;
 }
 
-.rt-logos-eyebrow {
-  margin: 0 0 16px;
-  font-size: 16px;
-  font-weight: 600;
+.rt-credibility-eyebrow {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 700;
   letter-spacing: 0.05em;
-  color: #014900;
+  color: #CBAE76;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Swiper layout */
-.rt-logos-swiper {
+.rt-credibility-swiper {
   width: 100%;
+  position: relative;
 }
 
 /* Each slide width is auto; we control spacing with margin-right to keep equal gaps */
-.rt-logo-slide {
+.rt-credibility-slide {
   width: auto !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 64px;
+  margin-right: 48px;
   transition: transform 0.3s ease;
 }
 
-.rt-logo-slide:hover {
+.rt-credibility-slide:hover {
   transform: scale(1.05);
 }
 
-/* Logo image sizing */
-.rt-logo-img {
-  max-height: 80px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(80%) contrast(1.2) brightness(0.9);
-  opacity: 0.8;
-  transition: all 0.4s ease;
-  border-radius: 8px;
-  padding: 8px;
+/* Credibility Card */
+.rt-credibility-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(203, 174, 118, 0.3);
+  border-radius: 16px;
+  padding: 20px 28px;
+  min-width: 280px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.rt-logo-img:hover {
-  opacity: 1;
-  filter: grayscale(0%) contrast(1) brightness(1);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 25px rgba(1, 73, 0, 0.15);
+.rt-credibility-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(203, 174, 118, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
-/* Responsive: show 2–3 logos at once on mobile (smaller heights & gaps) */
-@media (max-width: 768px) {
-  .rt-logos-wrap {
-    padding: 20px 0;
-  }
-  
-  .rt-logos-inner {
-    padding: 8px 16px;
-  }
-  
-  .rt-logos-eyebrow {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-  
-  .rt-logo-slide { 
-    margin-right: 32px; 
-  }
-  
-  .rt-logo-img { 
-    max-height: 56px;
-    padding: 6px;
-  }
+/* Icon Container */
+.rt-credibility-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
-/* Enhanced visual effects */
-.rt-logos-swiper {
-  position: relative;
+.rt-credibility-card:hover .rt-credibility-icon {
+  background: rgba(203, 174, 118, 0.2);
+  transform: rotate(5deg);
 }
 
-.rt-logos-swiper::before,
-.rt-logos-swiper::after {
+/* Content */
+.rt-credibility-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rt-credibility-stat {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.rt-credibility-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Color classes */
+.text-gold {
+  color: #CBAE76;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+/* Fade edges for seamless effect */
+.rt-credibility-swiper::before,
+.rt-credibility-swiper::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 80px;
+  width: 100px;
   z-index: 10;
   pointer-events: none;
 }
 
-.rt-logos-swiper::before {
+.rt-credibility-swiper::before {
   left: 0;
-  background: linear-gradient(90deg, #EDDBC3, transparent);
+  background: linear-gradient(90deg, #014900, transparent);
 }
 
-.rt-logos-swiper::after {
+.rt-credibility-swiper::after {
   right: 0;
-  background: linear-gradient(270deg, #EDDBC3, transparent);
+  background: linear-gradient(270deg, #014900, transparent);
+}
+
+/* Responsive: show 1-2 cards at once on mobile */
+@media (max-width: 768px) {
+  .rt-credibility-wrap {
+    padding: 24px 0;
+  }
+  
+  .rt-credibility-inner {
+    padding: 12px 16px;
+  }
+  
+  .rt-credibility-eyebrow {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .rt-credibility-slide { 
+    margin-right: 24px; 
+  }
+  
+  .rt-credibility-card {
+    min-width: 240px;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+  
+  .rt-credibility-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .rt-credibility-stat {
+    font-size: 20px;
+  }
+  
+  .rt-credibility-label {
+    font-size: 12px;
+  }
+}
+
+/* Enhanced animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
+.rt-credibility-card {
+  animation: float 6s ease-in-out infinite;
+}
+
+.rt-credibility-card:nth-child(2n) {
+  animation-delay: -2s;
+}
+
+.rt-credibility-card:nth-child(3n) {
+  animation-delay: -4s;
 }

@@ -1,29 +1,70 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Star, Users, Award, Clock, Shield, Heart, CheckCircle, Sparkles } from "lucide-react";
 import "swiper/css";
 import "./trusted-logos-marquee.css";
 
-const logos = [
-  // Replace with your real logo paths in /public/logos or remote URLs
-  "/logos/bbc.svg",
-  "/logos/guardian.svg",
-  "/logos/itv.svg",
-  "/logos/metro.svg",
-  "/logos/dermalogica.svg",
-  "/logos/fresha.svg",
-  "/logos/cardiffuni.svg"
+const credibilityMarkers = [
+  {
+    icon: Star,
+    stat: "500+",
+    label: "Cardiff Women Transformed",
+    color: "text-gold"
+  },
+  {
+    icon: Award,
+    stat: "10+",
+    label: "Years Clinical Experience",
+    color: "text-white"
+  },
+  {
+    icon: Shield,
+    stat: "5-Star",
+    label: "Rated Aesthetic Clinic",
+    color: "text-gold"
+  },
+  {
+    icon: Users,
+    stat: "100%",
+    label: "Client Satisfaction Rate",
+    color: "text-white"
+  },
+  {
+    icon: CheckCircle,
+    stat: "Dermalogica",
+    label: "Certified Professional",
+    color: "text-gold"
+  },
+  {
+    icon: Heart,
+    stat: "Cardiff's",
+    label: "Most Trusted Clinic",
+    color: "text-white"
+  },
+  {
+    icon: Sparkles,
+    stat: "1000+",
+    label: "Successful Treatments",
+    color: "text-gold"
+  },
+  {
+    icon: Clock,
+    stat: "Same Day",
+    label: "Booking Available",
+    color: "text-white"
+  }
 ];
 
 export default function TrustedLogosMarquee() {
   return (
-    <section className="rt-logos-wrap" aria-label="Trusted by Cardiff's Leading Beauty Organizations">
-      <div className="rt-logos-inner">
-        <h3 className="rt-logos-eyebrow">Trusted by Cardiff's Leading Beauty Organizations</h3>
+    <section className="rt-credibility-wrap" aria-label="Cardiff's Most Trusted Aesthetic Clinic">
+      <div className="rt-credibility-inner">
+        <h3 className="rt-credibility-eyebrow">Cardiff's Most Trusted Aesthetic Clinic</h3>
 
         <Swiper
           modules={[Autoplay]}
-          className="rt-logos-swiper"
+          className="rt-credibility-swiper"
           // Core behavior
           loop
           // show slides sized by content width
@@ -40,30 +81,40 @@ export default function TrustedLogosMarquee() {
           speed={8000} // 8 seconds for smooth, professional pace
           allowTouchMove={false}
           // add extra duplicates to prevent any gap on loop
-          loopAdditionalSlides={logos.length}
+          loopAdditionalSlides={credibilityMarkers.length}
         >
-          {logos.map((src, i) => (
-            <SwiperSlide className="rt-logo-slide" key={`logo-${i}`}>
-              <div className="rt-logo-container">
-                <img 
-                  src={src} 
-                  alt={`Trusted partner logo ${i + 1}`}
-                  className="rt-logo-img"
-                  loading="lazy"
-                />
+          {credibilityMarkers.map((marker, i) => (
+            <SwiperSlide className="rt-credibility-slide" key={`marker-${i}`}>
+              <div className="rt-credibility-card">
+                <div className="rt-credibility-icon">
+                  <marker.icon className={`w-6 h-6 ${marker.color}`} />
+                </div>
+                <div className="rt-credibility-content">
+                  <div className={`rt-credibility-stat ${marker.color}`}>
+                    {marker.stat}
+                  </div>
+                  <div className="rt-credibility-label">
+                    {marker.label}
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
           {/* Duplicate once more to ensure seamless loop across wide screens */}
-          {logos.map((src, i) => (
-            <SwiperSlide className="rt-logo-slide" key={`logo-dup-${i}`}>
-              <div className="rt-logo-container">
-                <img 
-                  src={src} 
-                  alt={`Trusted partner logo ${i + 1}`}
-                  className="rt-logo-img"
-                  loading="lazy"
-                />
+          {credibilityMarkers.map((marker, i) => (
+            <SwiperSlide className="rt-credibility-slide" key={`marker-dup-${i}`}>
+              <div className="rt-credibility-card">
+                <div className="rt-credibility-icon">
+                  <marker.icon className={`w-6 h-6 ${marker.color}`} />
+                </div>
+                <div className="rt-credibility-content">
+                  <div className={`rt-credibility-stat ${marker.color}`}>
+                    {marker.stat}
+                  </div>
+                  <div className="rt-credibility-label">
+                    {marker.label}
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
