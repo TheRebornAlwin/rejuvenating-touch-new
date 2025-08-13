@@ -1,1 +1,74 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'bolt.new',cType: 'managed',cRay: '96ebecbcdf07e266',cH: 'WhsEcXfKlxtFePt_TBIdvSaAjz4TTb.eezrtwqgPeZ8-1755127034-1.2.1.1-Ja1BhcOS5giMHQ3btam.JWXBbbNF.11Ovkap5wVgH5UwHF7_TMeC.iZrTpeqIplx',cUPMDTk:"/api/bracket/fix?__cf_chl_tk=d6Pe.IExIJrkY6DS31NVB59i5EoMIrCYfmQfPt.RnhU-1755127034-1.0.1.1-Iux12ERFCd3.ELoEmjI8dk_o80mMALjqdcv4X051sLI",cFPWv: 'g',cITimeS: '1755127034',cTplC:0,cTplV:5,cTplB: 'cf',fa:"/api/bracket/fix?__cf_chl_f_tk=d6Pe.IExIJrkY6DS31NVB59i5EoMIrCYfmQfPt.RnhU-1755127034-1.0.1.1-Iux12ERFCd3.ELoEmjI8dk_o80mMALjqdcv4X051sLI",md: 'BS5a8.YDnMafUwd3gpTkdbmplOtjGWVy_EJ4uk8KfLo-1755127034-1.2.1.1-acSkg4o3Z5D7gQnl7KSIqnuvbPzmze.4eTM3znye1TefD9OM_nh4gX1Gp9m3D6RUUD8GW5czQ9uGPfNPgnVJ1xLmbw7isBiQ80xXq7ASLPsX09VeQ3x2n1EUKJwkD7VUyZeBb3vm8jcJdnxufFWjL3_adJKMwUd39nqsRqNSthskQKn0d2oNseYsZGrEgHshmSlnwAly3XYPlNGrmHuDQ4mh9FcTUba7yusb0WIyFvu.1paEefcp6cM2OURrYSgT_1o_U1brea1yMva_xDwF9PYLfqRn3qUhnR_31D.xy7TDtndtzLCUPZCGoNwnNximKVS1toAlbbiaoCowDIaayNL_CpDu7IEjo_Pv3glJmEY8ydSH2ETatIwd8Y1bUIYkUHq.wXx46FVVfFY2cdB9ZWMNYRvEo3EbxEbZOFWycFSUIap51lwWDFLcBdKhzRBC_kKvF0eBwkAljwDbKiJjYBil4DpQ0nP0FO5I3pCOXBoRRZZEmgbj1kdm0PBKHfIOH1wMCI5sZfqpOyavWLfRkldDEsYOhQ8gwZykR4FSmeh4cxv08iaxeME2VVHr9ZrnvfuKPrwWwciBAWY6xHRPTIv.TaE6tIwNhWn.fxGtHgABpeSzzwgb883bp1q6lShZk_u1xJdSl99OD7aO5CitbyRHa6aar55YXpUzff29Mg7XKv3HD8rIK9Y.vvWnGgJwI5GmCfKFKhq8ol9YM1Wxmp2K4XeKsKWHBziCngu5FhRowOO22nvLRmgJ8PGFfyWri78siklOGF7Df8zOoObpBBAieZPqMlt0Zm2uejuGv0ivyjZtU0k6XC8Q9AF9VlVnMP_X9IYO3GYBPij9omjG0H9.o9YVC9U_VPjJZz41UVhhZjvefZcX7Y8kcBC7Vfjc4kT1delyCV2xAn0k8EJ2nFEeDjzLLbodfaUgrcbF7a0eopzejqwQ7JTGzOgufcKnuMFR9OCZJwTFKLnPGnFMD4GzYoUudW9QqBZFXE66JCFQT8jWrH50TNDBXSC9b_zAPSRXEEKcsCTOpPvI5VM69Hkh6pF3vIgF1qpReOGi5dGK63ssThWu.os652NTdil_AjXj5tc_J7TzsZuqx1Tmh2DOGPCfn8zue.SZy.U59tkoNEKxs1EqpSW8O6lLBNWm_46xhauLeF107xIsHolSHXqin5du51SLvi1fMx4wiorC73NucdZQklmcaqlHXsfVrN24iNPKYk6wjRkb6B58DSsZKCoYiEvAPxk5Fabq1_Y',mdrd: '',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=96ebecbcdf07e266';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/api/bracket/fix?__cf_chl_rt_tk=d6Pe.IExIJrkY6DS31NVB59i5EoMIrCYfmQfPt.RnhU-1755127034-1.0.1.1-Iux12ERFCd3.ELoEmjI8dk_o80mMALjqdcv4X051sLI"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "./trusted-logos-marquee.css";
+
+const logos = [
+  // Replace with your real logo paths in /public/logos or remote URLs
+  "/logos/bbc.svg",
+  "/logos/guardian.svg",
+  "/logos/itv.svg",
+  "/logos/metro.svg",
+  "/logos/dermalogica.svg",
+  "/logos/fresha.svg",
+  "/logos/cardiffuni.svg"
+];
+
+export default function TrustedLogosMarquee() {
+  return (
+    <section className="rt-logos-wrap" aria-label="Trusted by Cardiff's Leading Beauty Organizations">
+      <div className="rt-logos-inner">
+        <h3 className="rt-logos-eyebrow">Trusted by Cardiff's Leading Beauty Organizations</h3>
+
+        <Swiper
+          modules={[Autoplay]}
+          className="rt-logos-swiper"
+          // Core behavior
+          loop
+          // show slides sized by content width
+          slidesPerView={"auto"}
+          // equal spacing via CSS gap
+          spaceBetween={0}
+          // autoplay: continuous movement
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          // long transition to mimic marquee-like flow
+          speed={8000} // 8 seconds for smooth, professional pace
+          allowTouchMove={false}
+          // add extra duplicates to prevent any gap on loop
+          loopAdditionalSlides={logos.length}
+        >
+          {logos.map((src, i) => (
+            <SwiperSlide className="rt-logo-slide" key={`logo-${i}`}>
+              <div className="rt-logo-container">
+                <img 
+                  src={src} 
+                  alt={`Trusted partner logo ${i + 1}`}
+                  className="rt-logo-img"
+                  loading="lazy"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* Duplicate once more to ensure seamless loop across wide screens */}
+          {logos.map((src, i) => (
+            <SwiperSlide className="rt-logo-slide" key={`logo-dup-${i}`}>
+              <div className="rt-logo-container">
+                <img 
+                  src={src} 
+                  alt={`Trusted partner logo ${i + 1}`}
+                  className="rt-logo-img"
+                  loading="lazy"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+}
